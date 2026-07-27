@@ -1,0 +1,688 @@
+ Keyword	8-Char Alias	Units	Units Type	Component Type	Full Label	Specific Component	Where	Extra Info
+AAx	 	rad/s2	Angular acceleration	Chassis motion	Roll acc. (body-fixed), vehicle	Vehicle roll (body-fixed)	Dyn	This is the [sx] component of the angular acceleration vector of the sprung mass.
+AAy	 	rad/s2	Angular acceleration	Chassis motion	Pitch acc. (body-fixed), vehicle	Vehicle pitch (body-fixed)	Dyn	This is the [sy] component of the angular acceleration vector of the sprung mass.
+AAy_L1	 	rad/s2	Angular acceleration	Wheels	Wheel L1 spin acceleration	Wheel L1 spin	Dyn	
+AAy_L2	 	rad/s2	Angular acceleration	Wheels	Wheel L2 spin acceleration	Wheel L2 spin	Dyn	
+AAy_R1	 	rad/s2	Angular acceleration	Wheels	Wheel R1 spin acceleration	Wheel R1 spin	Dyn	
+AAy_R2	 	rad/s2	Angular acceleration	Wheels	Wheel R2 spin acceleration	Wheel R2 spin	Dyn	
+AAz	 	rad/s2	Angular acceleration	Chassis motion	Yaw acc. (body-fixed), vehicle	Vehicle yaw (body-fixed)	Dyn	This is the [sz] component of the angular acceleration vector of the sprung mass.
+AA_Eng	 	rad/s2	Angular acceleration	Powertrain	Engine crankshaft angular accel.	Engine crankshaft	Dyn	
+AA_P	 	rad/s2	Angular acceleration	Chassis motion	Pitch accel. (Euler), vehicle	Vehicle pitch (Euler)	Dyn	This is the second time derivative of the Euler pitch angle of the sprung mass. Be aware that the second derivatives AA_P, AA_R, and AA_Y are not measurable in physical vehicles.
+AA_R	 	rad/s2	Angular acceleration	Chassis motion	Roll accel. (Euler), vehicle	Vehicle roll (Euler)	Dyn	This is the second time derivative of the Euler roll angle of the sprung mass.
+AA_Y	 	rad/s2	Angular acceleration	Chassis motion	Yaw accel. (Euler), vehicle	Vehicle yaw (Euler)	Dyn	This is the second time derivative of the Euler yaw angle of the sprung mass.
+ABS_L1	 	-	ABS apply command	Brakes	ABS apply command, L1	ABS apply command, L1	Kin	
+ABS_L2	 	-	ABS apply command	Brakes	ABS apply command, L2	ABS apply command, L2	Kin	
+ABS_R1	 	-	ABS apply command	Brakes	ABS apply command, R1	ABS apply command, R1	Kin	
+ABS_R2	 	-	ABS apply command	Brakes	ABS apply command, R2	ABS apply command, R2	Kin	
+Alpha_L1	 	deg	Angle	Tires	Lateral slip angle, tire L1	Tire L1 lateral slip	Dyn	Instant lateral slip is the arc-tangent of the ratio of lateral to longitudinal velocity at the center of tire contact in the plane of the ground at the tire contact: ATAN2(Vy, Vx).
+Alpha_L2	 	deg	Angle	Tires	Lateral slip angle, tire L2	Tire L2 lateral slip	Dyn	
+Alpha_R1	 	deg	Angle	Tires	Lateral slip angle, tire R1	Tire R1 lateral slip	Dyn	
+Alpha_R2	 	deg	Angle	Tires	Lateral slip angle, tire R2	Tire R2 lateral slip	Dyn	
+AlphL_L1	 	deg	Angle	Tires	Lateral slip (lagged), tire L1	Tire L1 slip (lagged)	Kin	Lagged slip angle is the arc-tangent of the state variable SV_SLIP_LAT_L1 that follows the tangent of the instant slip angle ALPHA_L1, subject to a dynamic lag based on lateral relaxation length.
+AlphL_L2	 	deg	Angle	Tires	Lateral slip (lagged), tire L2	Tire L2 slip (lagged)	Kin	
+AlphL_R1	 	deg	Angle	Tires	Lateral slip (lagged), tire R1	Tire R1 slip (lagged)	Kin	
+AlphL_R2	 	deg	Angle	Tires	Lateral slip (lagged), tire R2	Tire R2 slip (lagged)	Kin	
+AVx	 	deg/s	Angular rate	Chassis motion	Roll rate (body-fixed), vehicle	Vehicle roll (body-fixed)	State	This is the [sx] component of the angular velocity vector of the sprung mass.
+AVx_L1	 	deg/s	Angular rate	Wheels	Roll rate, wheel L1	Roll rate, wheel L1	Kin	This is the roll component of the angular velocity vector of the wheel knuckle, in the body-fixed [wx] direction.
+AVx_L2	 	deg/s	Angular rate	Wheels	Roll rate, wheel L2	Roll rate, wheel L2	Kin	
+AVx_R1	 	deg/s	Angular rate	Wheels	Roll rate, wheel R1	Roll rate, wheel R1	Kin	
+AVx_R2	 	deg/s	Angular rate	Wheels	Roll rate, wheel R2	Roll rate, wheel R2	Kin	
+AVy	 	deg/s	Angular rate	Chassis motion	Pitch rate (body-fixed), vehicle	Vehicle pitch (body-fixed)	State	This is the [sy] component of the angular velocity vector of the sprung mass.
+AVy_L1	 	rpm	Driveline speed	Wheels	Wheel L1 spin	Wheel L1 spin	State	
+AVy_L2	 	rpm	Driveline speed	Wheels	Wheel L2 spin	Wheel L2 spin	State	
+AVy_R1	 	rpm	Driveline speed	Wheels	Wheel R1 spin	Wheel R1 spin	State	
+AVy_R2	 	rpm	Driveline speed	Wheels	Wheel R2 spin	Wheel R2 spin	State	
+AVy_W_L1	 	deg/s	Angular rate	Wheels	Pitch rate, wheel L1	Pitch rate, wheel L1	Kin	This is the pitch component of the angular velocity vector of the wheel knuckle, in the body-fixed [wy] direction.
+AVy_W_L2	 	deg/s	Angular rate	Wheels	Pitch rate, wheel L2	Pitch rate, wheel L2	Kin	
+AVy_W_R1	 	deg/s	Angular rate	Wheels	Pitch rate, wheel R1	Pitch rate, wheel R1	Kin	
+AVy_W_R2	 	deg/s	Angular rate	Wheels	Pitch rate, wheel R2	Pitch rate, wheel R2	Kin	
+AVz	 	deg/s	Angular rate	Chassis motion	Yaw rate (body-fixed), vehicle	Vehicle yaw (body-fixed)	State	This is the [sz] component of the angular velocity vector of the sprung mass.
+AVzKp_L1	 	deg/s	Angular rate	Steering	Steer rate about kingpin L1	Kingpin L1 steer rate	Dyn	Component of angular velocity vector of wheel knuckle about the 3D inclined kingpin axis.
+AVzKp_L2	 	deg/s	Angular rate	Steering	Steer rate about kingpin L2	Kingpin L2 steer rate	Dyn	
+AVzKp_R1	 	deg/s	Angular rate	Steering	Steer rate about kingpin R1	Kingpin R1 steer rate	Dyn	Component of angular velocity vector of wheel knuckle about the 3D inclined kingpin axis.
+AVzKp_R2	 	deg/s	Angular rate	Steering	Steer rate about kingpin R2	Kingpin R2 steer rate	Dyn	
+AVz_L1	 	deg/s	Angular rate	Wheels	Yaw rate, wheel L1	Yaw rate, wheel L1	Kin	This is the yaw component of the angular velocity vector of the wheel knuckle, in the body-fixed [wz] direction..
+AVz_L2	 	deg/s	Angular rate	Wheels	Yaw rate, wheel L2	Yaw rate, wheel L2	Kin	
+AVz_R1	 	deg/s	Angular rate	Wheels	Yaw rate, wheel R1	Yaw rate, wheel R1	Kin	
+AVz_R2	 	deg/s	Angular rate	Wheels	Yaw rate, wheel R2	Yaw rate, wheel R2	Kin	
+AV_D3f	 	rpm	Driveline speed	Powertrain	Front diff input shaft spin	Front diff input shaft	Kin	
+AV_D3r	 	rpm	Driveline speed	Powertrain	Rear diff input shaft spin	Rear diff input shaft	Kin	
+AV_DS_L1	 	rpm	Driveline speed	Powertrain	Left front driveshaft speed	Left front driveshaft	Kin	
+AV_DS_L2	 	rpm	Driveline speed	Powertrain	Left rear driveshaft speed	Left rear driveshaft	Kin	
+AV_DS_R1	 	rpm	Driveline speed	Powertrain	Right front driveshaft speed	Right front driveshaft	Kin	
+AV_DS_R2	 	rpm	Driveline speed	Powertrain	Right rear driveshaft speed	Right rear driveshaft	Kin	
+AV_Eng	 	rpm	Driveline speed	Powertrain	Engine crankshaft spin	Engine crankshaft	State	
+AV_Gear1	 	deg/s	Angular rate	Steering	Pitman arm rotation rate, axle 1	Axle 1 steering	Kin	
+AV_Gear2	 	deg/s	Angular rate	Steering	Pitman arm rotation rate, axle 2	Axle 2 steering	Kin	
+AV_P	 	deg/s	Angular rate	Chassis motion	Pitch rate (Euler), vehicle	Vehicle pitch (Euler)	Kin	This is the time derivative of the Euler pitch angle of the sprung mass. Be aware that the derivatives AV_P, AV_R, and AV_Y are not measurable in physical vehicles.
+AV_R	 	deg/s	Angular rate	Chassis motion	Roll rate (Euler), vehicle	Vehicle roll (Euler)	Kin	This is the time derivative of the Euler roll angle of the sprung mass.
+AV_TC	 	rpm	Driveline speed	Powertrain	Trans input shaft spin	Transmission input shaft	Kin	
+AV_Trans	 	rpm	Driveline speed	Powertrain	Trans. output shaft spin	Transmission output shaft	Kin	
+AV_Y	 	deg/s	Angular rate	Chassis motion	Yaw rate (Euler), vehicle	Vehicle yaw (Euler)	Kin	This is the time derivative of the Euler yaw angle of the sprung mass.
+Ax	 	g	Longitudinal acceleration	Chassis motion	Long. accel., inst. CG, vehicle	Instant CG, vehicle	Dyn	This is the acceleration of the instant CG of the vehicle unit in the ISO/SAE [x] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+Ax_Rd	 	g	Longitudinal acceleration	Chassis motion	Road X accel., inst. CG, vehicle	Instant CG, vehicle	Dyn	This is the acceleration of the instant CG of the vehicle unit, in the road [rx] direction.
+Ax_SCcmd	 	g	Longitudinal acceleration	Speed controller	Ax command for SC	Ax command for speed controller	Ctl	
+Ax_SCrq	 	g	Longitudinal acceleration	Speed controller	Ax request from SC	Ax request from speed controller	Ctl	
+Ax_SM	 	g	Longitudinal acceleration	Chassis motion	Long. accel., CG, sprung mass	CG, sprung mass	Dyn	This is the [x] component of the acceleration vector of the sprung mass CG.
+Ay	 	g	Lateral acceleration	Chassis motion	Lat. accel., inst. CG, vehicle	Instant CG, vehicle	Dyn	This is the acceleration of the instant CG of the vehicle unit in the ISO/SAE [y] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+Ay_Rd	 	g	Lateral acceleration	Chassis motion	Road Y accel., inst. CG, vehicle	Instant CG, vehicle	Dyn	This is the acceleration of the instant CG of the vehicle unit in the road [ry] direction.
+Ay_SM	 	g	Lateral acceleration	Chassis motion	Lat. accel., CG, sprung mass	CG, sprung mass	Dyn	This is the [y] component of the acceleration vector of the sprung mass CG.
+Az	 	g	Vertical acceleration	Chassis motion	Vert. accel., inst. CG, vehicle	Instant CG, vehicle	Dyn	This is the acceleration of the instant CG of the vehicle unit, in the [nz] direction. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+Az_Rd	 	g	Vertical acceleration	Chassis motion	Road Z accel., inst. CG, vehicle	Instant CG, vehicle	Dyn	This is the acceleration of the instant CG of the vehicle unit in the road [rz] direction.
+Az_SM	 	g	Vertical acceleration	Chassis motion	Vert. accel., CG, sprung mass	CG, sprung mass	Dyn	This is the [nz] component of the acceleration vector of the sprung mass CG.
+A_Gear1	 	deg	Angle	Steering	Pitman arm rotation, axle 1	Axle 1 steering	Kin	
+A_Gear2	 	deg	Angle	Steering	Pitman arm rotation, axle 2	Axle 2 steering	Kin	
+A_StrIn1	 	deg	Angle	Steering	Steering input gear angle, A1	Axle 1 steering	State	
+A_StrIn2	 	deg	Angle	Steering	Steering input gear angle, A2	Axle 2 steering	State	
+A_Tbar	 	deg	Angle	Steering	Steering torsion bar angle	Steering	Kin	
+Beta	 	deg	Angle	Chassis motion	Slip angle, vehicle	Vehicle slip (beta)	Kin	The side-slip angle of the vehicle unit is calculated with the ISO/SAE definition as ATAN2(Vy, Vx), where Vy and Vx are the ISO [y] and [x] components of the velocity of the instant center of gravity of the vehicle.
+BetaAir	 	deg	Angle	Aerodynamics	Aero slip angle, vehicle	Aero slip angle, vehicle	Kin	Angle of air velocity in the vehicle reference frame, relative to the instant CG for the vehicle unit. Head-on = 0. 90-deg is in the [y] direction.
+BetaR	 	deg/s	Angular rate	Chassis motion	Slip angle rate, vehicle	Vehicle slip rate	Kin	
+BetaRd	 	deg	Angle	Chassis motion	Slip angle rel. to road, vehicle	Vehicle slip (beta) rel. to road	Kin	This is the side-slip angle of the vehicle unit relative to the Road Reference Frame: ATAN2(Vy_Rd, Vx_Rd).
+BetaRdR	 	deg/s	Angular rate	Chassis motion	Slip angle rate (road), vehicle	Vehicle slip rate (road)	Kin	
+Bk_Boost	 	mm	Displacement	Brakes	Brake booster displacement	Brake Booster	Dyn	
+Bk_Obj_1	 	-	Braking status	Objects	Braking status for object 1	Object 1	State	
+Bk_Pedal	 	mm	Displacement	Brakes	Brake pedal displacement	Brake Pedal	Dyn	
+Bk_Stat	 	-	Boolean	Brakes	Brake apply status	Brake Control	Ctl	This is 0 (brake control not applied; Pbk_Con < 100 Pa) or 1 (brake control applied; Pbk_Con > 100 Pa).
+CamberL1	 	deg	Angle	Suspensions	Camber angle, wheel L1	Wheel camber L1	Kin	
+CamberL2	 	deg	Angle	Suspensions	Camber angle, wheel L2	Wheel camber L2	Kin	
+CamberR1	 	deg	Angle	Suspensions	Camber angle, wheel R1	Wheel camber R1	Kin	
+CamberR2	 	deg	Angle	Suspensions	Camber angle, wheel R2	Wheel camber R2	Kin	
+CamUSL1	 	deg	Angle	Suspensions	Camber (unsteered wheel) L1	Wheel camber (unsteered) L1	Kin	Roll angle of the unsteered wheel plane, using the camber sign convention.
+CamUSR1	 	deg	Angle	Suspensions	Camber (unsteered wheel) R1	Wheel camber (unsteered) R1	Kin	
+Clt_D1_2	 	-	Clutch control	Powertrain	Front diff 2nd clutch control	Front diff 2nd clutch	Ctl	
+Clt_D2_2	 	-	Clutch control	Powertrain	Rear diff 2nd clutch control	Rear diff 2nd clutch	Ctl	
+Clt_D3_2	 	-	Clutch control	Powertrain	Transfer case 2nd clutch control	Transfer case 2nd clutch	Ctl	
+ClutchD1	 	-	Clutch control	Powertrain	Front diff clutch control	Front diff clutch	Ctl	
+ClutchD2	 	-	Clutch control	Powertrain	Rear diff clutch control	Rear diff clutch	Ctl	
+ClutchD3	 	-	Clutch control	Powertrain	Transfer case clutch control	Transfer case clutch	Ctl	
+ClutchL1	 	-	Clutch control	Powertrain	Left front whl. clutch control	Left front wheel clutch	Ctl	
+ClutchL2	 	-	Clutch control	Powertrain	Left rear whl. clutch control	Left rear wheel clutch	Ctl	
+ClutchR1	 	-	Clutch control	Powertrain	Right front whl. clutch control	Right front wheel clutch	Ctl	
+ClutchR2	 	-	Clutch control	Powertrain	Right rear whl. clutch control	Right rear wheel clutch	Ctl	
+ClutchTr	 	-	Clutch control	Powertrain	Transmission clutch control	Transmission clutch	Ctl	
+Cl_Stat	 	-	Boolean	Powertrain	Clutch locked state	Transmission clutch	State	Clutch lock status: 0 -> slipping, 1 -> locked.
+CmpAD_L1	 	g	Compression acceleration	Suspensions	Compression accel, damper L1	Damper L1	Dyn	
+CmpAD_L2	 	g	Compression acceleration	Suspensions	Compression accel, damper L2	Damper L2	Dyn	
+CmpAD_R1	 	g	Compression acceleration	Suspensions	Compression accel, damper R1	Damper R1	Dyn	
+CmpAD_R2	 	g	Compression acceleration	Suspensions	Compression accel, damper R2	Damper R2	Dyn	
+CmpD_L1	 	mm	Compression	Suspensions	Compression of damper L1	Damper L1	Dyn	
+CmpD_L2	 	mm	Compression	Suspensions	Compression of damper L2	Damper L2	Dyn	
+CmpD_R1	 	mm	Compression	Suspensions	Compression of damper R1	Damper R1	Dyn	
+CmpD_R2	 	mm	Compression	Suspensions	Compression of damper R2	Damper R2	Dyn	
+CmpJStL1	 	mm	Compression	Suspensions	Compression of jounce stop L1	L1 jounce stop	Dyn	
+CmpJStL2	 	mm	Compression	Suspensions	Compression of jounce stop L2	L2 jounce stop	Dyn	
+CmpJStR1	 	mm	Compression	Suspensions	Compression of jounce stop R1	R1 jounce stop	Dyn	
+CmpJStR2	 	mm	Compression	Suspensions	Compression of jounce stop R2	R2 jounce stop	Dyn	
+CmpRD_L1	 	mm/s	Compression rate	Suspensions	Compression rate for damper L1	Damper L1	Dyn	
+CmpRD_L2	 	mm/s	Compression rate	Suspensions	Compression rate for damper L2	Damper L2	Dyn	
+CmpRD_R1	 	mm/s	Compression rate	Suspensions	Compression rate for damper R1	Damper R1	Dyn	
+CmpRD_R2	 	mm/s	Compression rate	Suspensions	Compression rate for damper R2	Damper R2	Dyn	
+CmpRStL1	 	mm	Compression	Suspensions	Compression of rebound stop L1	L1 rebound stop	Dyn	
+CmpRStL2	 	mm	Compression	Suspensions	Compression of rebound stop L2	L2 rebound stop	Dyn	
+CmpRStR1	 	mm	Compression	Suspensions	Compression of rebound stop R1	R1 rebound stop	Dyn	
+CmpRStR2	 	mm	Compression	Suspensions	Compression of rebound stop R2	R2 rebound stop	Dyn	
+CmpS_L1	 	mm	Compression	Suspensions	Compression of ride spring L1	Ride spring L1	Kin	
+CmpS_L2	 	mm	Compression	Suspensions	Compression of ride spring L2	Ride spring L2	Kin	
+CmpS_R1	 	mm	Compression	Suspensions	Compression of ride spring R1	Ride spring R1	Kin	
+CmpS_R2	 	mm	Compression	Suspensions	Compression of ride spring R2	Ride spring R2	Kin	
+CmpT_L1	 	mm	Compression	Tires	Compression, tire L1	Tire L1 compression	Kin	
+CmpT_L2	 	mm	Compression	Tires	Compression, tire L2	Tire L2 compression	Kin	
+CmpT_R1	 	mm	Compression	Tires	Compression, tire R1	Tire R1 compression	Kin	
+CmpT_R2	 	mm	Compression	Tires	Compression, tire R2	Tire R2 compression	Kin	
+CmpX_A2	 	mm	Compliance deflection	Axles	Axle 2 X deflection	Axle 2 X deflection	Kin	
+CmpY_A2	 	mm	Compliance deflection	Axles	Axle 2 lateral deflection	Axle 2 lateral deflection	Kin	
+DiveG_L1	 	deg	Angle	Suspensions	Wheel L1 dive (generic)	Wheel L1 dive (generic)	Kin	Change in orientation of the wheel carrier about the wheel spin axis due to suspension kinematics and compliance. Positive dive is a counter-clockwise rotation when viewed from the left side. This is a generic measurement available for all suspensions.
+DiveG_L2	 	deg	Angle	Suspensions	Wheel L2 dive (generic)	Wheel L2 dive (generic)	Kin	
+DiveG_R1	 	deg	Angle	Suspensions	Wheel R1 dive (generic)	Wheel R1 dive (generic)	Kin	
+DiveG_R2	 	deg	Angle	Suspensions	Wheel R2 dive (generic)	Wheel R2 dive (generic)	Kin	
+Dive_A2	 	deg	Angle	Axles	Axle 2 dive	Axle 2 dive	Kin	
+Dive_L1	 	deg	Angle	Suspensions	Wheel L1 dive	Wheel L1 dive	Kin	
+Dive_R1	 	deg	Angle	Suspensions	Wheel R1 dive	Wheel R1 dive	Kin	
+dZdXair	 	-	Ground slope	Aerodynamics	X slope at road aero reference 1	X slope: road refence frame 1	Kin	dZ/dX slope of the ground at the point where the Road Reference Frame is defined.
+dZdX_L1	 	-	Ground slope	Ground and road	Ground X slope under tire L1	X slope L1	Kin	Slope of the road or ground in the global [nx] direction at the center of tire contact.
+dZdX_L2	 	-	Ground slope	Ground and road	Ground X slope under tire L2	X slope L2	Kin	
+dZdX_R1	 	-	Ground slope	Ground and road	Ground X slope under tire R1	X slope R1	Kin	
+dZdX_R2	 	-	Ground slope	Ground and road	Ground X slope under tire R2	X slope R2	Kin	
+dZdYair	 	-	Ground slope	Aerodynamics	Y slope at road aero reference 1	Y slope: road refence frame 1	Kin	dZ/dY slope of the ground at the point where the Road Reference Frame is defined.
+dZdY_L1	 	-	Ground slope	Ground and road	Ground Y slope under tire L1	Y slope L1	Kin	Slope of the road or ground in the global [ny] direction at the center of tire contact.
+dZdY_L2	 	-	Ground slope	Ground and road	Ground Y slope under tire L2	Y slope L2	Kin	
+dZdY_R1	 	-	Ground slope	Ground and road	Ground Y slope under tire R1	Y slope R1	Kin	
+dZdY_R2	 	-	Ground slope	Ground and road	Ground Y slope under tire R2	Y slope R2	Kin	
+ESC_Stat	 	-	State	Powertrain	ESC engine torque control state	ESC engine torque control	Dyn	
+Event	 	-	Count	Time	Running count of events	Event	Dyn	This output is initially set to 0, and is incremented every time a VS Event is triggered.
+FbkB_In	 	N	Force	Brakes	Brake input force before boost	Brake input force	Ctl	
+FbkB_Out	 	N	Force	Brakes	Brake booster output force	Brake Booster	Ctl	
+Fd_L1	 	N	Force	Suspensions	Force (compressive), damper L1	Damper L1	Dyn	
+Fd_L2	 	N	Force	Suspensions	Force (compressive), damper L2	Damper L2	Dyn	
+Fd_R1	 	N	Force	Suspensions	Force (compressive), damper R1	Damper R1	Dyn	
+Fd_R2	 	N	Force	Suspensions	Force (compressive), damper R2	Damper R2	Dyn	
+FJSt_L1	 	N	Force	Suspensions	Jounce-stop force L1	Jounce stop L1	Dyn	
+FJSt_L2	 	N	Force	Suspensions	Jounce-stop force L2	Jounce stop L2	Dyn	
+FJSt_R1	 	N	Force	Suspensions	Jounce-stop force R1	Jounce stop R1	Dyn	
+FJSt_R2	 	N	Force	Suspensions	Jounce-stop force R2	Jounce stop R2	Dyn	
+FRSt_L1	 	N	Force	Suspensions	Rebound-stop force L1	Rebound stop L1	Dyn	
+FRSt_L2	 	N	Force	Suspensions	Rebound-stop force L2	Rebound stop L2	Dyn	
+FRSt_R1	 	N	Force	Suspensions	Rebound-stop force R1	Rebound stop R1	Dyn	
+FRSt_R2	 	N	Force	Suspensions	Rebound-stop force R2	Rebound stop R2	Dyn	
+FsExt_L1	 	N	Force	Suspensions	Ext. spring force L1 (comp.)	Ext. spring L1 (comp.)	Dyn	Spring force from external model (e.g., Simulink). The force applied in the multibody model is divided by the instant mechanical advantage.
+FsExt_L2	 	N	Force	Suspensions	Ext. spring force L2 (comp.)	Ext. spring L2 (comp.)	Dyn	Spring force from external model (e.g., Simulink). The force applied in the multibody model is divided by the instant mechanical advantage.
+FsExt_R1	 	N	Force	Suspensions	Ext. spring force R1 (comp.)	Ext. spring R1 (comp.)	Dyn	
+FsExt_R2	 	N	Force	Suspensions	Ext. spring force R2 (comp.)	Ext. spring R2 (comp.)	Dyn	
+Fs_L1	 	N	Force	Suspensions	Spring force L1 (comp.)	Spring L1 (comp.)	Dyn	Spring force from built-in model, including hysteresis. The force applied in the multibody model is divided by the instant mechanical advantage.
+Fs_L2	 	N	Force	Suspensions	Spring force L2 (comp.)	Spring L2 (comp.)	Dyn	Spring force from built-in model, including hysteresis. The force applied in the multibody model is divided by the instant mechanical advantage.
+Fs_R1	 	N	Force	Suspensions	Spring force R1 (comp.)	Spring R1 (comp.)	Dyn	
+Fs_R2	 	N	Force	Suspensions	Spring force R2 (comp.)	Spring R2 (comp.)	Dyn	
+FullStep	 	-	Boolean	Time	Integrator full-step status	Integrator full-step status	State	Boolean that indicates whether the integrator is at a full step (1) or not (0). Be aware that changes to state variables from external equations that are not made at the full step are discarded. Also, events are processed only at the full step.
+FxExA2	 	N	Force	External actions	External Fx, axle 2	Axle 2	Dyn	Optional force applied from the sprung mass to the axle in the [sx] direction
+FxExL1	 	N	Force	External actions	External Fx, L1	Wheel L1	Dyn	Optional user-defined force applied to the wheel knuckle from the sprung mass in the [sx] direction
+FxExR1	 	N	Force	External actions	External Fx, R1	Wheel R1	Dyn	
+FxGExA2	 	N	Force	External actions	External FxG, axle 2	Axle 2	Dyn	Optional force applied from the inertial reference to the axle in the [nx] direction
+FxGExL1	 	N	Force	External actions	External FxG, L1	Wheel L1	Dyn	Optional user-defined force applied to the wheel knuckle from the inertial reference N in the [nx] direction
+FxGExR1	 	N	Force	External actions	External FxG, R1	Wheel R1	Dyn	
+Fx_A1	 	N	Force	Axles	Longitudinal tire force, axle 1	Axle 1 longitudinal tire force	Dyn	
+Fx_A2	 	N	Force	Axles	Longitudinal tire force, axle 2	Axle 2 longitudinal tire force	Dyn	
+Fx_Air	 	N	Force	Aerodynamics	Aero Fx, vehicle	Aero Fx, vehicle	Dyn	Force applied to the sprung mass at the aerodynamic reference point in the [sx] direction.
+Fx_L1	 	N	Force	Tires	Longitudinal force, tire L1	Tire L1 longitudinal	Dyn	
+Fx_L2	 	N	Force	Tires	Longitudinal force, tire L2	Tire L2 longitudinal	Dyn	
+Fx_R1	 	N	Force	Tires	Longitudinal force, tire R1	Tire R1 longitudinal	Dyn	
+Fx_R2	 	N	Force	Tires	Longitudinal force, tire R2	Tire R2 longitudinal	Dyn	
+Fx_WC_L1	 	N	Force	Wheels	Tire Fx at wheel center L1	Tire Fx at wheel center L1	Dyn	This is the component of the total tire force vector applied to the wheel center in the [wx] direction.
+Fx_WC_L2	 	N	Force	Wheels	Tire Fx at wheel center L2	Tire Fx at wheel center L2	Dyn	
+Fx_WC_R1	 	N	Force	Wheels	Tire Fx at wheel center R1	Tire Fx at wheel center R1	Dyn	
+Fx_WC_R2	 	N	Force	Wheels	Tire Fx at wheel center R2	Tire Fx at wheel center R2	Dyn	
+FyExA2	 	N	Force	External actions	External Fy, axle 2	Axle 2	Dyn	Optional force applied from the sprung mass to the axle in the [sy] direction
+FyExL1	 	N	Force	External actions	External Fy, L1	Wheel L1	Dyn	Optional user-defined force applied to the wheel knuckle from the sprung mass in the [sy] direction
+FyExR1	 	N	Force	External actions	External Fy, R1	Wheel R1	Dyn	
+FyGExA2	 	N	Force	External actions	External FyG, axle 2	Axle 2	Dyn	Optional force applied from the inertial reference to the axle in the [ny] direction
+FyGExL1	 	N	Force	External actions	External FyG, L1	Wheel L1	Dyn	Optional user-defined force applied to the wheel knuckle from the inertial reference N in the [ny] direction
+FyGExR1	 	N	Force	External actions	External FyG, R1	Wheel R1	Dyn	
+Fy_A1	 	N	Force	Axles	Lateral tire force, axle 1	Axle 1 lateral tire force	Dyn	
+Fy_A2	 	N	Force	Axles	Lateral tire force, axle 2	Axle 2 lateral tire force	Dyn	
+Fy_Air	 	N	Force	Aerodynamics	Aero Fy, vehicle	Aero Fy, vehicle	Dyn	Force applied to the sprung mass at the aerodynamic reference point in the [sy] direction.
+Fy_L1	 	N	Force	Tires	Lateral force, tire L1	Tire L1 lateral	Dyn	
+Fy_L2	 	N	Force	Tires	Lateral force, tire L2	Tire L2 lateral	Dyn	
+Fy_R1	 	N	Force	Tires	Lateral force, tire R1	Tire R1 lateral	Dyn	
+Fy_R2	 	N	Force	Tires	Lateral force, tire R2	Tire R2 lateral	Dyn	
+Fy_WC_L1	 	N	Force	Wheels	Tire Fy at wheel center L1	Tire Fy at wheel center L1	Dyn	This is the component of the total tire force vector applied to the wheel center in the [wy] direction.
+Fy_WC_L2	 	N	Force	Wheels	Tire Fy at wheel center L2	Tire Fy at wheel center L2	Dyn	
+Fy_WC_R1	 	N	Force	Wheels	Tire Fy at wheel center R1	Tire Fy at wheel center R1	Dyn	
+Fy_WC_R2	 	N	Force	Wheels	Tire Fy at wheel center R2	Tire Fy at wheel center R2	Dyn	
+FzExA2	 	N	Force	External actions	External Fz, axle 2	Axle 2	Dyn	Optional force applied from the sprung mass to the axle in the [sz] direction
+FzExL1	 	N	Force	External actions	External Fz, L1	Wheel L1	Dyn	Optional user-defined force applied to the wheel knuckle from the sprung mass in the [sz] direction
+FzExR1	 	N	Force	External actions	External Fz, R1	Wheel R1	Dyn	
+FzGExA2	 	N	Force	External actions	External FzG, axle 2	Axle 2	Dyn	Optional force applied from the inertial reference to the axle in the [nz] direction
+FzGExL1	 	N	Force	External actions	External FzG, L1	Wheel L1	Dyn	Optional user-defined force applied to the wheel knuckle from the inertial reference N in the [nz] direction
+FzGExR1	 	N	Force	External actions	External FzG, R1	Wheel R1	Dyn	
+Fz_A1	 	N	Force	Axles	Vertical tire force, axle 1	Axle 1 vertical tire force	Dyn	
+Fz_A2	 	N	Force	Axles	Vertical tire force, axle 2	Axle 2 vertical tire force	Dyn	
+Fz_Air	 	N	Force	Aerodynamics	Aero Fz, vehicle	Aero Fz, vehicle	Dyn	Force applied to the sprung mass at the aerodynamic reference point in the [sz] direction.
+Fz_L1	 	N	Force	Tires	Vertical force, tire L1	Tire L1 vertical	Dyn	
+Fz_L2	 	N	Force	Tires	Vertical force, tire L2	Tire L2 vertical	Dyn	
+Fz_R1	 	N	Force	Tires	Vertical force, tire R1	Tire R1 vertical	Dyn	
+Fz_R2	 	N	Force	Tires	Vertical force, tire R2	Tire R2 vertical	Dyn	
+Fz_WC_L1	 	N	Force	Wheels	Tire Fz at wheel center L1	Tire Fz at wheel center L1	Dyn	This is the component of the total tire force vector applied to the wheel center in the [wz] direction.
+Fz_WC_L2	 	N	Force	Wheels	Tire Fz at wheel center L2	Tire Fz at wheel center L2	Dyn	
+Fz_WC_R1	 	N	Force	Wheels	Tire Fz at wheel center R1	Tire Fz at wheel center R1	Dyn	
+Fz_WC_R2	 	N	Force	Wheels	Tire Fz at wheel center R2	Tire Fz at wheel center R2	Dyn	
+F_boost	 	N	Force	Steering	Steering boost force	Power steering	State	
+F_Pedal	 	N	Force	Brakes	Brake pedal force	Brake Pedal	Ctl	
+F_TRdL1	 	N	Force	Steering	Rack load from tierod L1	Tierod L1 rack load	Kin	
+F_TRdL2	 	N	Force	Steering	Rack load from tierod L2	Tierod L2 rack load	Kin	
+F_TRdR1	 	N	Force	Steering	Rack load from tierod R1	Tierod R1 rack load	Kin	
+F_TRdR2	 	N	Force	Steering	Rack load from tierod R2	Tierod R2 rack load	Kin	
+Gamma_L1	 	deg	Angle	Tires	Inclination angle, tire L1	Tire L1 inclination	Kin	Tire inclination is relative to the ground surface.
+Gamma_L2	 	deg	Angle	Tires	Inclination angle, tire L2	Tire L2 inclination	Kin	
+Gamma_R1	 	deg	Angle	Tires	Inclination angle, tire R1	Tire R1 inclination	Kin	
+Gamma_R2	 	deg	Angle	Tires	Inclination angle, tire R2	Tire R2 inclination	Kin	
+GearStat	 	-	Gear	Powertrain	Transmission gear status	Transmission gear status	Dyn	
+Gear_CL	 	-	Gear	Powertrain	Closed-loop transmission gear	Closed-loop transmission gear	Dyn	
+Gear_Del	 	-	Gear	Powertrain	Delayed transmission gear status	Delayed transmission gear status	Dyn	
+Gear_OL	 	-	Gear	Powertrain	Open-loop transmission gear	Open-loop transmission gear	Dyn	
+GPSlongA	 	deg	GPS longitude	Chassis motion	GPS absolute longitude, veh 1	Vehicle	State	
+GPS_Altitude	GPSAlitd	m	GPS altitude	Chassis motion	Altitude (Zo+GPS_REF_ALT), veh 1	Vehicle	State	
+GPS_Lat	 	deg	GPS latitude	Chassis motion	GPS relative latitude, veh 1	Vehicle	State	
+GPS_LatA	 	deg	GPS latitude	Chassis motion	GPS absolute latitude, veh 1	Vehicle	State	
+GPS_LatO_1	GPS_Lat1	deg	GPS latitude	Objects	GPS latitude, object 1	Object 1	State	GPS latitude of control point of object.
+GPS_Long	 	deg	GPS longitude	Chassis motion	GPS relative longitude, veh 1	Vehicle	State	
+GPS_LongO_1	GPS_Lng1	deg	GPS longitude	Objects	GPS longitude, object 1	Object 1	State	GPS longitude of control point of object.
+Hcg_TM	 	mm	Height (local Z coordinate)	Chassis motion	Height, inst. CG, vehicle	Instant CG, vehicle	Kin	This is the height (local Z coordinate) of the instant CG of the vehicle unit in the sprung mass coordinate system. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+HeadO_1	 	deg	Heading angle	Objects	Heading angle, object 1	Object 1	State	
+ID_Event	 	-	ID number	Database	ID number of event	ID of event	State	This output gives the value of the system parameter ID_EVENT. The parameter will keep its default value of 0 unless it is changed by a VS Event or other VS Command.
+ID_Run	 	-	ID number	Database	ID number of run	ID of run	State	This output gives the value of the system parameter ID_RUN. The parameter will keep its default value of 0 unless it is changed by a VS Event or other VS Command.
+Ispin_Tr	 	kg-m2	inertia	Powertrain	Transmission spin inertia	Transmission spin inertia	Dyn	
+IstrGear	 	kg-m2	Inertia	Steering	Instant steering inertia	Steering gear	Kin	Instant steering system inertia, referenced to input gear rotation. Includes I_GEAR_IN plus ISPIN_XXZZ for wheels and M_US_STR for the suspension. If OPT_I_GEAR_IN == 0, this is the same as the parameter I_GEAR_IN.
+Iw_Dr_L1	 	kg-m2	Inertia	Powertrain	Driveline inertia for wheel L1	Drive wheel L1	State	Additional driveline inertia applied to the drive wheel.
+Iw_Dr_L2	 	kg-m2	Inertia	Powertrain	Driveline inertia for wheel L2	Drive wheel L2	State	Additional driveline inertia applied to the drive wheel.
+Iw_Dr_R1	 	kg-m2	Inertia	Powertrain	Driveline inertia for wheel R1	Drive wheel R1	State	Additional driveline inertia applied to the drive wheel.
+Iw_Dr_R2	 	kg-m2	Inertia	Powertrain	Driveline inertia for wheel R2	Drive wheel R2	State	Additional driveline inertia applied to the drive wheel.
+JncA_A2	 	g	Compression acceleration	Axles	Axle 2 jounce acceleration	Axle 2 jounce	Dyn	
+JncR_A2	 	mm/s	Compression rate	Axles	Axle 2 jounce rate	Axle 2 jounce	Kin	
+JncR_L1	 	mm/s	Compression rate	Suspensions	Wheel L1 jounce rate	Wheel L1 jounce	Kin	
+JncR_L2	 	mm/s	Compression rate	Suspensions	Wheel L2 jounce rate	Wheel L2 jounce	Kin	
+JncR_R1	 	mm/s	Compression rate	Suspensions	Wheel R1 jounce rate	Wheel R1 jounce	Kin	
+JncR_R2	 	mm/s	Compression rate	Suspensions	Wheel R2 jounce rate	Wheel R2 jounce	Kin	
+Jnc_L1	 	mm	Compression	Suspensions	Wheel L1 jounce (compression)	Wheel L1 jounce	Kin	
+Jnc_L2	 	mm	Compression	Suspensions	Wheel L2 jounce (compression)	Wheel L2 jounce	Kin	
+Jnc_R1	 	mm	Compression	Suspensions	Wheel R1 jounce (compression)	Wheel R1 jounce	Kin	
+Jnc_R2	 	mm	Compression	Suspensions	Wheel R2 jounce (compression)	Wheel R2 jounce	Kin	
+JounceA2	 	mm	Compression	Axles	Axle 2 jounce	Axle 2 jounce	Dyn	
+Kappa_L1	 	-	Dimensionless ratio	Tires	Longitudinal slip, tire L1	Tire L1 long. slip	Dyn	Instant longitudinal slip: [AV of wheel]*RRE/Vx - 1.
+Kappa_L2	 	-	Dimensionless ratio	Tires	Longitudinal slip, tire L2	Tire L2 long. slip	Dyn	
+Kappa_R1	 	-	Dimensionless ratio	Tires	Longitudinal slip, tire R1	Tire R1 long. slip	Dyn	
+Kappa_R2	 	-	Dimensionless ratio	Tires	Longitudinal slip, tire R2	Tire R2 long. slip	Dyn	
+KappL_L1	 	-	Dimensionless ratio	Tires	Long. slip (lagged), tire L1	Tire L1 long. slip (lagged)	Dyn	Lagged slip ratio is a state variable that follows the instant slip ratio KAPPA_L1, subject to a dynamic lag.
+KappL_L2	 	-	Dimensionless ratio	Tires	Long. slip (lagged), tire L2	Tire L2 long. slip (lagged)	Dyn	
+KappL_R1	 	-	Dimensionless ratio	Tires	Long. slip (lagged), tire R1	Tire R1 long. slip (lagged)	Dyn	
+KappL_R2	 	-	Dimensionless ratio	Tires	Long. slip (lagged), tire R2	Tire R2 long. slip (lagged)	Dyn	
+K_TC	 	Kinv	Inverse capacity	Powertrain	TC inverse capacity	Torque converter	Dyn	
+LatO_1	 	m	Lateral offset	Objects	Lateral offset, object 1	Object 1	State	Lateral position is associated with the path identified by the parameter PATH_ID_OBJ. If PATH_ID_OBJ is zero, then LatO is not used and is always zero.
+LxcgTM	 	mm	Lx distance (local -X coord.)	Chassis motion	Lx distance to inst. CG, vehicle	Instant CG, vehicle	Kin	This is the local X coordinate of the instant CG of the vehicle unit in the sprung mass coordinate system, with the sign flipped as needed to represent the distance behind the sprung-mass origin. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+Mfuel	 	kg	Fuel consumed	Powertrain	Mass of fuel consumed	Fuel	State	
+ModeTran	 	-	Transmission control mode	Powertrain	Transmission control mode	Transmission control mode	Dyn	Control option for transmission, from configurable function MODE_TRANS or imported variable. -1 is reverse, 0 is neutral, 1 specifies open-loop mode, 2 and higher specify a closed-loop limit (maximum gear available to the controller). The current gear in closed-loop mode is Gear_CL. The current gear in open-loop mode is Gear_OL.
+MsgObj_1	 	-	Message (code)	Objects	Message from object 1	Object 1	State	Each object has an output message (code) that can be set with VS Commands or imported from an external software tool. This can be used to provide content from objects representing signs and traffic signals.
+MuX_L1	 	-	Friction coefficient	Ground and road	Ground X friction, tire L1	Tire/Ground MuX L1	Kin	Friction from the built-in Configurable Functions is the same for the X and Y directions. However, different values can be imported for the X and Y directions for simulating unusual conditions such as sand or snow.
+MuX_L2	 	-	Friction coefficient	Ground and road	Ground X friction, tire L2	Tire/Ground MuX L2	Kin	
+MuX_R1	 	-	Friction coefficient	Ground and road	Ground X friction, tire R1	Tire/Ground MuX R1	Kin	
+MuX_R2	 	-	Friction coefficient	Ground and road	Ground X friction, tire R2	Tire/Ground MuX R2	Kin	
+MuY_L1	 	-	Friction coefficient	Ground and road	Ground Y friction, tire L1	Tire/Ground MuY L1	Kin	Friction from the built-in Configurable Functions is the same for the X and Y directions. However, different values can be imported for the X and Y directions for simulating unusual conditions such as sand or snow.
+MuY_L2	 	-	Friction coefficient	Ground and road	Ground Y friction, tire L2	Tire/Ground MuY L2	Kin	
+MuY_R1	 	-	Friction coefficient	Ground and road	Ground Y friction, tire R1	Tire/Ground MuY R1	Kin	
+MuY_R2	 	-	Friction coefficient	Ground and road	Ground Y friction, tire R2	Tire/Ground MuY R2	Kin	
+MxExA2	 	N-m	Moment	External actions	External Mx, axle 2	Axle 2	Dyn	Optional moment applied from the sprung mass to the axle in the [sx] direction
+MxExL1	 	N-m	Moment	External actions	External Mx, L1	Wheel L1	Dyn	Optional user-defined moment applied to the wheel knuckle from the sprung mass in the [sx] direction
+MxExR1	 	N-m	Moment	External actions	External Mx, R1	Wheel R1	Dyn	
+MxGExA2	 	N-m	Moment	External actions	External MxG, axle 2	Axle 2	Dyn	Optional moment applied from the inertial reference to the axle in the [nx] direction
+MxGExL1	 	N-m	Moment	External actions	External MxG, L1	Wheel L1	Dyn	Optional user-defined moment applied to the wheel knuckle from the inertial reference N in the [nx] direction
+MxGExR1	 	N-m	Moment	External actions	External MxG, R1	Wheel R1	Dyn	
+MxGExt	 	N-m	Moment	External actions	External MxG on sprung mass	Sprung mass	Dyn	Optional user-defined moment applied from the inertial reference N in the [sx] direction.
+Mx_A1	 	N-m	Moment	Suspensions	Auxiliary roll moment, axle 1	Axle 1	Dyn	
+Mx_A2	 	N-m	Moment	Suspensions	Auxiliary roll moment, axle 2	Axle 2	Dyn	
+Mx_Air	 	N-m	Moment	Aerodynamics	Aero Mx, vehicle	Aero Mx, vehicle	Dyn	Moment applied to the sprung mass in the [sx] direction.
+Mx_Ext	 	N-m	Moment	External actions	External Mx on sprung mass	Sprung mass	Dyn	Optional user-defined moment applied from the inertial reference N in the [nx] direction.
+Mx_L1	 	N-m	Moment	Tires	Overturning moment, tire L1	Tire L1 overturning	Dyn	
+Mx_L2	 	N-m	Moment	Tires	Overturning moment, tire L2	Tire L2 overturning	Dyn	
+Mx_R1	 	N-m	Moment	Tires	Overturning moment, tire R1	Tire R1 overturning	Dyn	
+Mx_R2	 	N-m	Moment	Tires	Overturning moment, tire R2	Tire R2 overturning	Dyn	
+Mx_WC_L1	 	N-m	Moment	Wheels	Tire Mx at wheel center L1	Tire Mx at wheel center L1	Dyn	This is the [wx] component of the total moment vector due to tire moments and the tire force vector applied to the wheel center.
+Mx_WC_L2	 	N-m	Moment	Wheels	Tire Mx at wheel center L2	Tire Mx at wheel center L2	Dyn	
+Mx_WC_R1	 	N-m	Moment	Wheels	Tire Mx at wheel center R1	Tire Mx at wheel center R1	Dyn	
+Mx_WC_R2	 	N-m	Moment	Wheels	Tire Mx at wheel center R2	Tire Mx at wheel center R2	Dyn	
+MyExA2	 	N-m	Moment	External actions	External My, axle 2	Axle 2	Dyn	Optional moment applied from the sprung mass to the axle in the [sy] direction
+MyExL1	 	N-m	Moment	External actions	External My, L1	Wheel L1	Dyn	Optional user-defined moment applied to the wheel knuckle from the sprung mass in the [sy] direction
+MyExR1	 	N-m	Moment	External actions	External My, R1	Wheel R1	Dyn	
+MyGExA2	 	N-m	Moment	External actions	External MyG, axle 2	Axle 2	Dyn	Optional moment applied from the inertial reference to the axle in the [ny] direction
+MyGExL1	 	N-m	Moment	External actions	External MyG, L1	Wheel L1	Dyn	Optional user-defined moment applied to the wheel knuckle from the inertial reference N in the [ny] direction
+MyGExR1	 	N-m	Moment	External actions	External MyG, R1	Wheel R1	Dyn	
+MyGExt	 	N-m	Moment	External actions	External MyG on sprung mass	Sprung mass	Dyn	Optional user-defined moment applied from the inertial reference N in the [sy] direction.
+MyRR_L1	 	N-m	Moment	Tires	Rolling resist moment, tire L1	Tire L1 rolling resistance	Dyn	
+MyRR_L2	 	N-m	Moment	Tires	Rolling resist moment, tire L2	Tire L2 rolling resistance	Dyn	
+MyRR_R1	 	N-m	Moment	Tires	Rolling resist moment, tire R1	Tire R1 rolling resistance	Dyn	
+MyRR_R2	 	N-m	Moment	Tires	Rolling resist moment, tire R2	Tire R2 rolling resistance	Dyn	
+My_Air	 	N-m	Moment	Aerodynamics	Aero My, vehicle	Aero My, vehicle	Dyn	Moment applied to the sprung mass in the [sy] direction.
+My_Bk_L1	 	N-m	Moment	Brakes	Brake moment L1	Brake My L1	Dyn	
+My_Bk_L2	 	N-m	Moment	Brakes	Brake moment L2	Brake My L2	Dyn	
+My_Bk_R1	 	N-m	Moment	Brakes	Brake moment R1	Brake My R1	Dyn	
+My_Bk_R2	 	N-m	Moment	Brakes	Brake moment R2	Brake My R2	Dyn	
+My_Dr_L1	 	N-m	Moment	Powertrain	Total drive moment for wheel L1	Drive wheel L1	Dyn	
+My_Dr_L2	 	N-m	Moment	Powertrain	Total drive moment for wheel L2	Drive wheel L2	Dyn	
+My_Dr_R1	 	N-m	Moment	Powertrain	Total drive moment for wheel R1	Drive wheel R1	Dyn	
+My_Dr_R2	 	N-m	Moment	Powertrain	Total drive moment for wheel R2	Drive wheel R2	Dyn	
+My_Ext	 	N-m	Moment	External actions	External My on sprung mass	Sprung mass	Dyn	Optional user-defined moment applied from the inertial reference N in the [ny] direction.
+My_US_L1	 	N-m	Moment	Wheels	Ext moment on whl from usm L1	Wheel L1	Dyn	This is an optional user-defined moment applied to the wheel from the unsprung mass.
+My_US_L2	 	N-m	Moment	Wheels	Ext moment on whl from usm L2	Wheel L2	Dyn	
+My_US_R1	 	N-m	Moment	Wheels	Ext moment on whl from usm R1	Wheel R1	Dyn	
+My_US_R2	 	N-m	Moment	Wheels	Ext moment on whl from usm R2	Wheel R2	Dyn	
+My_WC_L1	 	N-m	Moment	Wheels	Tire My at wheel center L1	Tire My at wheel center L1	Dyn	This is the [wy] component of the total moment vector due to tire moments and the tire force vector applied to the wheel center.
+My_WC_L2	 	N-m	Moment	Wheels	Tire My at wheel center L2	Tire My at wheel center L2	Dyn	
+My_WC_R1	 	N-m	Moment	Wheels	Tire My at wheel center R1	Tire My at wheel center R1	Dyn	
+My_WC_R2	 	N-m	Moment	Wheels	Tire My at wheel center R2	Tire My at wheel center R2	Dyn	
+MzExA2	 	N-m	Moment	External actions	External Mz, axle 2	Axle 2	Dyn	Optional moment applied from the sprung mass to the axle in the [sz] direction
+MzExL1	 	N-m	Moment	External actions	External Mz, L1	Wheel L1	Dyn	Optional user-defined moment applied to the wheel knuckle from the sprung mass in the [sz] direction
+MzExR1	 	N-m	Moment	External actions	External Mz, R1	Wheel R1	Dyn	
+MzGExA2	 	N-m	Moment	External actions	External MzG, axle 2	Axle 2	Dyn	Optional moment applied from the inertial reference to the axle in the [nz] direction
+MzGExL1	 	N-m	Moment	External actions	External MzG, L1	Wheel L1	Dyn	Optional user-defined moment applied to the wheel knuckle from the inertial reference N in the [nz] direction
+MzGExR1	 	N-m	Moment	External actions	External MzG, R1	Wheel R1	Dyn	
+MzGExt	 	N-m	Moment	External actions	External MzG on sprung mass	Sprung mass	Dyn	Optional user-defined moment applied from the inertial reference N in the [sz] direction.
+Mz_Air	 	N-m	Moment	Aerodynamics	Aero Mz, vehicle	Aero Mz, vehicle	Dyn	Moment applied to the sprung mass in the [sz] direction.
+Mz_Ext	 	N-m	Moment	External actions	External Mz on sprung mass	Sprung mass	Dyn	Optional user-defined moment applied from the inertial reference N in the [nz] direction.
+Mz_KP_L1	 	N-m	Moment	Steering	Steer moment about kingpin L1	Kingpin L1 steer moment	Dyn	
+Mz_KP_L2	 	N-m	Moment	Steering	Steer moment about kingpin L2	Kingpin L2 steer moment	Dyn	
+Mz_KP_R1	 	N-m	Moment	Steering	Steer moment about kingpin R1	Kingpin R1 steer moment	Dyn	
+Mz_KP_R2	 	N-m	Moment	Steering	Steer moment about kingpin R2	Kingpin R2 steer moment	Dyn	
+Mz_L1	 	N-m	Moment	Tires	Aligning moment, tire L1	Tire L1 aligning	Dyn	
+Mz_L2	 	N-m	Moment	Tires	Aligning moment, tire L2	Tire L2 aligning	Dyn	
+Mz_R1	 	N-m	Moment	Tires	Aligning moment, tire R1	Tire R1 aligning	Dyn	
+Mz_R2	 	N-m	Moment	Tires	Aligning moment, tire R2	Tire R2 aligning	Dyn	
+Mz_WC_L1	 	N-m	Moment	Wheels	Tire Mz at wheel center L1	Tire Mz at wheel center L1	Dyn	This is the [wz] component of the total moment vector due to tire moments and the tire force vector applied to the wheel center.
+Mz_WC_L2	 	N-m	Moment	Wheels	Tire Mz at wheel center L2	Tire Mz at wheel center L2	Dyn	
+Mz_WC_R1	 	N-m	Moment	Wheels	Tire Mz at wheel center R1	Tire Mz at wheel center R1	Dyn	
+Mz_WC_R2	 	N-m	Moment	Wheels	Tire Mz at wheel center R2	Tire Mz at wheel center R2	Dyn	
+M_boost	 	N-m	Torque	Steering	Steering boost torque	Power steering	State	
+M_Clutch	 	N-m	Torque	Powertrain	Torq. trans. device clutch torq.	Torque transfer device clutch	Dyn	Torque of the mechanical clutch or lockup clutch on a hydraulic torque converter.
+M_Cl_Cap	 	N-m	Torque	Powertrain	Max. main clutch torque capacity	Torque transfer device clutch	Dyn	Maximum torque capacity of the mechanical clutch or lockup clutch on a hydraulic torque converter. (This is not the actual transfered torque.)
+M_ColHys	 	N-m	Torque	Steering	Steering col. hysteresis torque	Steering	Kin	
+M_ColVis	 	N-m	Torque	Steering	Steering column damping torque	Steering	Kin	
+M_D1visc	 	N-m	Torque	Powertrain	Front diff viscous torque	Front diff viscous coupling	Dyn	
+M_D1_Cl	 	N-m	Torque	Powertrain	clutch torque for Front diff	clutch for Front diff	Dyn	
+M_D1_Cl2	 	N-m	Torque	Powertrain	2nd clutch torque for Front diff 	2nd clutch for Front diff 	Dyn	
+M_D2visc	 	N-m	Torque	Powertrain	Rear diff viscous torque	Rear diff viscous coupling	Dyn	
+M_D2_Cl	 	N-m	Torque	Powertrain	clutch torque for Rear diff	clutch for Rear diff	Dyn	
+M_D2_Cl2	 	N-m	Torque	Powertrain	2nd clutch torque for Rear diff 	2nd clutch for Rear diff 	Dyn	
+M_D3f	 	N-m	Torque	Powertrain	Front diff input shaft torque	Front diff input shaft	Dyn	
+M_D3r	 	N-m	Torque	Powertrain	Rear diff input shaft torque	Rear diff input shaft	Dyn	
+M_D3visc	 	N-m	Torque	Powertrain	Transfer case viscous torque	Transfer case viscous coupling	Dyn	
+M_D3_Cl	 	N-m	Torque	Powertrain	clutch torque for Transfer case	clutch for Transfer case	Dyn	
+M_D3_Cl2	 	N-m	Torque	Powertrain	2nd clutch torque for Transfer case 	2nd clutch for Transfer case 	Dyn	
+M_EngEsc	 	N-m	Torque	Powertrain	ESC requesting engine torque	ESC requesting for engine	Dyn	
+M_EngOut	 	N-m	Torque	Powertrain	Engine crankshaft output torque	Engine crankshaft output	Dyn	Input engine torque minus the inertial effect of the crankshaft rotational acceleration.
+M_Eng_In	 	N-m	Torque	Powertrain	Engine crankshaft input torque	Engine crankshaft input	Dyn	Torque applied to the crankshaft by the pistons (or other source of torque).
+M_Eng_Rq	 	N-m	Torque	Powertrain	Driver requesting engine torque	Driver requesting for engine	Dyn	
+M_L1_Cl	 	N-m	Torque	Powertrain	Left front clutch torque	Left front clutch	Dyn	
+M_L2_Cl	 	N-m	Torque	Powertrain	Left rear clutch torque	Left rear clutch	Dyn	
+M_R1_Cl	 	N-m	Torque	Powertrain	Right front clutch torque	Right front clutch	Dyn	
+M_R2_Cl	 	N-m	Torque	Powertrain	Right rear clutch torque	Right rear clutch	Dyn	
+M_StopL1	 	N-m	Moment	Steering	Moment from steering stop L1	Steer stop L1 moment	Kin	
+M_StopR1	 	N-m	Moment	Steering	Moment from steering stop R1	Steer stop R1 moment	Kin	
+M_SW	 	N-m	Torque	Steering	Steering wheel torque	Steering wheel	Kin	
+M_Tbar	 	N-m	Torque	Steering	Steering torsion bar torque	Steering	Kin	
+M_TC	 	N-m	Torque	Powertrain	Trans input shaft torque	Transmission input shaft	Dyn	Torque output from the torque converter or clutch. Torque input to the torque converter or clutch is the engine output torque.
+M_Trans	 	N-m	Torque	Powertrain	Trans. output shaft torque	Transmission output shaft	Dyn	
+M_TRdL1	 	N-m	Moment	Steering	Steer gear moment from tierod L1	Pitman arm L1 torque	Kin	
+M_TRdL2	 	N-m	Moment	Steering	Steer gear moment from tierod L2	Pitman arm L2 torque	Kin	
+M_TRdR1	 	N-m	Moment	Steering	Steer gear moment from tierod R1	Pitman arm R1 torque	Kin	
+M_TRdR2	 	N-m	Moment	Steering	Steer gear moment from tierod R2	Pitman arm R2 torque	Kin	
+PbkCh_L1	 	MPa	Pressure	Brakes	Brake actuator pressure L1	Brake actuator pressure L1	Dyn	This is the input pressure for the brake actuator, used to determine mechanical brake torque. It includes lags from fluid dynamics relative to the control pressure.
+PbkCh_L2	 	MPa	Pressure	Brakes	Brake actuator pressure L2	Brake actuator pressure L2	Dyn	
+PbkCh_R1	 	MPa	Pressure	Brakes	Brake actuator pressure R1	Brake actuator pressure R1	Dyn	
+PbkCh_R2	 	MPa	Pressure	Brakes	Brake actuator pressure R2	Brake actuator pressure R2	Dyn	
+PbkD_L1	 	MPa	Pressure	Brakes	Delivery pressure, brake L1	Delivery pressure L1	Dyn	This is the pressure after proportioning. It is the input pressure for the optional built-in ABS controller.
+PbkD_L2	 	MPa	Pressure	Brakes	Delivery pressure, brake L2	Delivery pressure L2	Dyn	
+PbkD_R1	 	MPa	Pressure	Brakes	Delivery pressure, brake R1	Delivery pressure R1	Dyn	
+PbkD_R2	 	MPa	Pressure	Brakes	Delivery pressure, brake R2	Delivery pressure R2	Dyn	
+PbkL_L1	 	MPa	Pressure	Brakes	Line pressure, brake L1	Line pressure L1	Dyn	This is the pressure before proportioning. It includes lag from the transport delay relative to the master cylinder pressure.
+PbkL_L2	 	MPa	Pressure	Brakes	Line pressure, brake L2	Line pressure L2	Dyn	
+PbkL_R1	 	MPa	Pressure	Brakes	Line pressure, brake R1	Line pressure R1	Dyn	
+PbkL_R2	 	MPa	Pressure	Brakes	Line pressure, brake R2	Line pressure R2	Dyn	
+Pbk_Con	 	MPa	Pressure	Brakes	Brake control input (M/C)	Brake master cylinder	Ctl	Control input for braking. This is typically the pressure from the master cylinder.
+Pctl_L1	 	MPa	Pressure	Brakes	Pressure from controller L1	Control pressure L1	Dyn	This is the pressure requested after all controls, but without lags due to fluid dynamics.
+Pctl_L2	 	MPa	Pressure	Brakes	Pressure from controller L2	Control pressure L2	Dyn	
+Pctl_R1	 	MPa	Pressure	Brakes	Pressure from controller R1	Control pressure R1	Dyn	
+Pctl_R2	 	MPa	Pressure	Brakes	Pressure from controller R2	Control pressure R2	Dyn	
+Pitch	 	deg	Angle	Chassis motion	Pitch, vehicle	Vehicle pitch	State	Euler pitch angle of the sprung mass. This is the pitch angle commonly used in vehicle dynamics.
+PitchGL1	 	deg	Angle	Ground and road	Pitch of ground, wheel L1	Pitch of ground, wheel L1	Kin	This is the pitch of the ground at the center of tire contact, based on the instant longitudinal direction of the wheel plane.
+PitchGL2	 	deg	Angle	Ground and road	Pitch of ground, wheel L2	Pitch of ground, wheel L2	Kin	
+PitchGR1	 	deg	Angle	Ground and road	Pitch of ground, wheel R1	Pitch of ground, wheel R1	Kin	
+PitchGR2	 	deg	Angle	Ground and road	Pitch of ground, wheel R2	Pitch of ground, wheel R2	Kin	
+PitchO1	 	deg	Pitch angle	Objects	Pitch angle of object 1	Object 1	State	
+PitchRd	 	deg	Angle	Chassis motion	Pitch rel. to road, vehicle	Vehicle pitch (road)	State	Pitch angle of the sprung mass relative to the Road Reference Frame.
+Pitch_A2	 	deg	Angle	Axles	Axle 2 pitch	Axle 2 pitch	Dyn	
+Pitch_L1	 	deg	Angle	Wheels	Pitch, wheel L1	Pitch, wheel L1	Kin	
+Pitch_L2	 	deg	Angle	Wheels	Pitch, wheel L2	Pitch, wheel L2	Kin	
+Pitch_R1	 	deg	Angle	Wheels	Pitch, wheel R1	Pitch, wheel R1	Kin	
+Pitch_R2	 	deg	Angle	Wheels	Pitch, wheel R2	Pitch, wheel R2	Kin	
+PtchAero	 	deg	Pitch	Aerodynamics	Aero pitch of SM	Aerodynamic pitch	Kin	Pitch angle of sprung mass relative to the ground at the aero reference point.
+PtchGnd	 	deg	Angle	Ground and road	Pitch angle of ground	Road reference frame 1	Kin	
+PtchGndA	 	deg	Pitch	Aerodynamics	Ground pitch for aero	Ground pitch for aero	Kin	
+PtchPath	 	deg	Angle	Driver model path	Pitch at ground on driver path	Ground at driver path	Ctl	Global pitch of the ground is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this is not calculated.
+PwrEngAv	 	kW	Power	Powertrain	Engine available power	Engine available	State	Power available to the speed controller, assuming full throttle at the current crankshaft speed.
+PwrEngIn	 	kW	Power	Powertrain	Engine crankshaft input power	Engine crankshaft input	Dyn	Power going into the engine before accounting for inertial effects of crankshaft angular acceleration.
+PwrEngO	 	kW	Power	Powertrain	Engine crankshaft output power	Engine crankshaft output	Dyn	Power coming out of the engine after accounting for inertial effects of crankshaft angular acceleration.
+PwrTrans	 	kW	Power	Powertrain	Transmission output shaft power	Transmission output shaft	Dyn	
+PwrWheel	 	kW	Power	Powertrain	Power to wheels from powertrain	Drive wheels	Dyn	
+Pwr_SC	 	kW	Power	Speed controller	Power from SC (no PT)	Speed controller (no powertrain)	Ctl	
+Pwr_SCrq	 	kW	Power	Speed controller	Power requested from SC	Speed controller requested power	Ctl	
+Pwr_TC	 	kW	Power	Powertrain	Trans input shaft power	Transmission input shaft	Dyn	
+Qfuel	 	kg/s	Fuel rate	Powertrain	Fuel rate	Fuel	Dyn	
+RdID_L1	 	-	Road ID Number	Tires	Road ID for tire L1	Tire L1	Kin	
+RdID_L2	 	-	Road ID Number	Tires	Road ID for tire L2	Tire L2	Kin	
+RdID_R1	 	-	Road ID Number	Tires	Road ID for tire R1	Tire R1	Kin	
+RdID_R2	 	-	Road ID Number	Tires	Road ID for tire R2	Tire R2	Kin	
+RgearDLT	 	-	Dimensionless ratio	Powertrain	Driveline total gear ratio	Driveline total gear	Dyn	
+Rgear_Tr	 	-	Dimensionless ratio	Powertrain	Transmission gear ratio	Transmission gear	Dyn	
+RhoPathY	 	1/m	Curvature	Driver model path	Curvature of path (road lateral)	Driver path (road lateral)	Ctl	Lateral (parallel to ground) component of curvature of driver preview reference path. This is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this curvature is not calculated.
+RhoPathZ	 	1/m	Curvature	Driver model path	Curvature of path (road normal)	Driver path (road normal)	Ctl	Normal (perpendicular to ground) component of curvature of driver preview reference path. This is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this curvature is not calculated.
+RolA_A1r	 	deg/s2	Angular acceleration	Axles	Axle 1 relative roll acc.	Axle 1 relative roll	Kin	
+RolA_A2r	 	deg/s2	Angular acceleration	Axles	Axle 2 relative roll acc.	Axle 2 relative roll	Kin	
+Roll	 	deg	Angle	Chassis motion	Roll, vehicle	Vehicle roll	State	This is the angle between [sy] and the horizontal plane normal to [nz]. It is calculated as arcsin(dot([sy], [nz])), and is more easily measurable than Euler roll. However, VS Visualizer requires the Euler angle, Roll_E.
+RollGL1	 	deg	Angle	Ground and road	Roll of ground, wheel L1	Roll of ground, wheel L1	Kin	This is the roll of the ground at the center of tire contact, based on the instant longitudinal direction of the wheel plane.
+RollGL2	 	deg	Angle	Ground and road	Roll of ground, wheel L2	Roll of ground, wheel L2	Kin	
+RollGnd	 	deg	Angle	Ground and road	Roll angle of ground	Road reference frame 	Kin	
+RollGR1	 	deg	Angle	Ground and road	Roll of ground, wheel R1	Roll of ground, wheel R1	Kin	
+RollGR2	 	deg	Angle	Ground and road	Roll of ground, wheel R2	Roll of ground, wheel R2	Kin	
+RollO_1	 	deg	Roll angle	Objects	Roll angle of object 1	Object 1	State	
+RollPath	 	deg	Angle	Driver model path	Roll at ground on driver path	Ground at driver path	Ctl	Global roll of the ground is calculated by the closed-loop speed controller when using path preview. If OPT_SC is not set to 4, then this is not calculated.
+RollWK_L1	RollWKL1	deg	Angle	Wheels	Roll, wheel knuckle L1	Roll, wheel knuckle L1	Kin	This is an Euler roll angle (3-2-1) for the wheel knuckle, used for VS STI tire models.
+RollWK_L2	RollWKL2	deg	Angle	Wheels	Roll, wheel knuckle L2	Roll, wheel knuckle L2	Kin	
+RollWK_R1	RollWKR1	deg	Angle	Wheels	Roll, wheel knuckle R1	Roll, wheel knuckle R1	Kin	
+RollWK_R2	RollWKR2	deg	Angle	Wheels	Roll, wheel knuckle R2	Roll, wheel knuckle R2	Kin	
+Roll_A1r	 	deg	Angle	Axles	Axle 1 relative roll	Axle 1 relative roll	Kin	The axle's relative roll is measured between the axle and the sprung mass's [sz]-normal plane. For independent suspensions, a line is drawn between the origins of the unsteered unsprung mass bodies.
+Roll_A2	 	deg	Angle	Axles	Axle 2 Euler roll	Axle 2	Kin	
+Roll_A2r	 	deg	Angle	Axles	Axle 2 relative roll	Axle 2 relative roll	Kin	
+Roll_E	 	deg	Angle	Chassis motion	Roll (Euler), vehicle	Vehicle roll (Euler)	State	This is the Euler roll angle of the sprung mass of the vehicle. This is needed by VS Visualizer, but is not the angle between [sy] and a horizontal reference unless the pitch angle is zero
+Roll_L1	 	deg	Angle	Wheels	Roll, wheel L1	Roll, wheel L1	Kin	This is the roll angle of the wheel spin axis, used to view with VS Visualizer.
+Roll_L2	 	deg	Angle	Wheels	Roll, wheel L2	Roll, wheel L2	Kin	
+Roll_R1	 	deg	Angle	Wheels	Roll, wheel R1	Roll, wheel R1	Kin	
+Roll_R2	 	deg	Angle	Wheels	Roll, wheel R2	Roll, wheel R2	Kin	
+Roll_Rd	 	deg	Angle	Chassis motion	Roll rel. to road, vehicle	Vehicle roll (road)	State	Roll angle of the sprung mass relative to the Road Reference Frame.
+RolR_A1r	 	deg/s	Angular rate	Axles	Axle 1 relative roll rate	Axle 1 relative roll	Kin	
+RolR_A2r	 	deg/s	Angular rate	Axles	Axle 2 relative roll rate	Axle 2 relative roll	Kin	
+RotRel_L1	RotR_L1	deg	Wheel relative rotation	Wheels	Wheel L1 rel rotation (SV)	Wheel L1 relative rotation	State	
+RotRel_L2	RotR_L2	deg	Wheel relative rotation	Wheels	Wheel L2 rel rotation (SV)	Wheel L2 relative rotation	State	
+RotRel_R1	RotR_R1	deg	Wheel relative rotation	Wheels	Wheel R1 rel rotation (SV)	Wheel R1 relative rotation	State	
+RotRel_R2	RotR_R2	deg	Wheel relative rotation	Wheels	Wheel R2 rel rotation (SV)	Wheel R2 relative rotation	State	
+RotTrans	 	rev	Rotation	Powertrain	Trans. output shaft rotation	Transmission output shaft	Kin	
+Rot_D3f	 	rev	Rotation	Powertrain	Front diff input shaft rotation	Front diff input shaft	Kin	
+Rot_D3r	 	rev	Rotation	Powertrain	Rear diff input shaft rotation	Rear diff input shaft	Kin	
+Rot_L1	 	rev	Rotation	Wheels	Wheel L1 rotation (Euler)	Wheel L1 rotation	Kin	
+Rot_L2	 	rev	Rotation	Wheels	Wheel L2 rotation (Euler)	Wheel L2 rotation	Kin	
+Rot_R1	 	rev	Rotation	Wheels	Wheel R1 rotation (Euler)	Wheel R1 rotation	Kin	
+Rot_R2	 	rev	Rotation	Wheels	Wheel R2 rotation (Euler)	Wheel R2 rotation	Kin	
+Rot_TC	 	rev	Rotation	Powertrain	Trans input shaft rotation	Transmission input shaft	Kin	
+RRE_L1	 	mm	Effective radius	Tires	Effective rolling rad., tire L1	Tire L1, eff. radius	Dyn	
+RRE_L2	 	mm	Effective radius	Tires	Effective rolling rad., tire L2	Tire L2, eff. radius	Dyn	
+RRE_R1	 	mm	Effective radius	Tires	Effective rolling rad., tire R1	Tire R1, eff. radius	Dyn	
+RRE_R2	 	mm	Effective radius	Tires	Effective rolling rad., tire R2	Tire R2, eff. radius	Dyn	
+RRsurf_L1	RRsurfL1	-	Rolling resistance coefficient	Ground and road	Ground RR, tire L1	Tire/Ground RRsurf L1	Kin	Rolling resistance is proportional to ground/road property RRSurf.
+RRsurf_L2	RRsurfL2	-	Rolling resistance coefficient	Ground and road	Ground RR, tire L2	Tire/Ground RRsurf L2	Kin	
+RRsurf_R1	RRsurfR1	-	Rolling resistance coefficient	Ground and road	Ground RR, tire R1	Tire/Ground RRsurf R1	Kin	
+RRsurf_R2	RRsurfR2	-	Rolling resistance coefficient	Ground and road	Ground RR, tire R2	Tire/Ground RRsurf R2	Kin	
+RstrA_1	 	-	Ratio	Steering	Ratio: SW/(road steer), axle 1	Ratio: SW/(road steer), axle 1	Ctl	Ratio: Steering wheel angle divided by road wheel steer at current speed.
+RstrA_2	 	-	Ratio	Steering	Ratio: SW/(road steer), axle 2	Ratio: SW/(road steer), axle 2	Ctl	
+R_AV_TC	 	-	Dimensionless ratio	Powertrain	TC output/input speed ratio	TC output/input speed	Kin	
+R_M_TC	 	-	Dimensionless ratio	Powertrain	TC out./input shaft torque ratio	TC output/input shaft torque	Dyn	
+Station	 	m	Longitudinal distance	Driver model	Station (path) at vehicle origin	Path station at vehicle origin	State	
+Sta_Air1	 	m	Station	Aerodynamics	Station used for aero on unit 1	Trailer aero 1	State	
+Sta_Prof	 	m	Longitudinal distance	Ground and road	Station for road profiles	Road profile station	State	"This is the travelled distance, calculated by integrating forward speed Vxz_Fwd. It is used to calculate incremental ground Z for ""wandering profiles"" that follow the tire contact points."
+Sta_Road	 	m	Longitudinal distance	Ground and road	Station (road) at vehicle origin	Road station at vehicle origin	State	
+Steer_DM	 	deg	Angle	Driver model	Steer angle from DM controller	Steering wheel	Ctl	
+Steer_L1	 	deg	Angle	Steering	Wheel steer L1	Wheel steer L1	Kin	Total road wheel steer due to kinematics and compliance, about the [sz] axis.
+Steer_L2	 	deg	Angle	Steering	Wheel steer L2	Wheel steer L2	Kin	
+Steer_R1	 	deg	Angle	Steering	Wheel steer R1	Wheel steer R1	Kin	
+Steer_R2	 	deg	Angle	Steering	Wheel steer R2	Wheel steer R2	Kin	
+Steer_SW	 	deg	Angle	Steering	Steering wheel angle	Steering wheel	Kin	
+StrAV_SW	 	deg/s	Angular rate	Steering	Steering wheel angular rate	Steering wheel	Kin	
+StrBp_A2	 	deg	Angle	Steering	Bump steer, axle 2	Axle 2 bump steer	Kin	
+StrC_L1	 	deg	Angle	Steering	Compliance steer, wheel L1	Wheel L1 compliance steer	Kin	
+StrC_L2	 	deg	Angle	Steering	Compliance steer, wheel L2	Wheel L2 compliance steer	Kin	
+StrC_R1	 	deg	Angle	Steering	Compliance steer, wheel R1	Wheel R1 compliance steer	Kin	
+StrC_R2	 	deg	Angle	Steering	Compliance steer, wheel R2	Wheel R2 compliance steer	Kin	
+StrKp_L1	 	deg	Angle	Steering	Steer angle about kingpin L1	Kingpin L1 steer angle	Dyn	This steer is about the 3D inclined kingpin axis, which is a rotation axis in the multibody model.
+StrKp_L2	 	deg	Angle	Steering	Steer angle about kingpin L2	Kingpin L2 steer angle	Dyn	
+StrKp_R1	 	deg	Angle	Steering	Steer angle about kingpin R1	Kingpin R1 steer angle	Dyn	This steer is about the 3D inclined kingpin axis, which is a rotation axis in the multibody model.
+StrKp_R2	 	deg	Angle	Steering	Steer angle about kingpin R2	Kingpin R2 steer angle	Dyn	
+StrK_L1	 	deg	Angle	Steering	Kinematic steer, wheel L1	Wheel L1 kinematic steer	Dyn	Steering angle of wheel due to kinematical effects: control divided by gear ratio, subject to nonlinear kinematical shaping, added to toe.
+StrK_L2	 	deg	Angle	Steering	Kinematic steer, wheel L2	Wheel L2 kinematic steer	Dyn	
+StrK_R1	 	deg	Angle	Steering	Kinematic steer, wheel R1	Wheel R1 kinematic steer	Dyn	
+StrK_R2	 	deg	Angle	Steering	Kinematic steer, wheel R2	Wheel R2 kinematic steer	Dyn	
+StrR_A2	 	deg	Angle	Steering	Roll steer, axle 2	Axle 2 roll steer	Kin	
+StrSWr_1	 	deg	Angle	Steering	SW angle reduced for axle 1	SW angle reduced for axle 1	Kin	Steering wheel angle divided by the constant steering gear ratio for this axle.
+StrSWr_2	 	deg	Angle	Steering	SW angle reduced for axle 2	SW angle reduced for axle 2	Kin	
+StrWp_A2	 	deg	Angle	Steering	Wrap steer, axle 2	Axle 2 wrap steer	Kin	
+SusX_A2	 	mm	Displacement	Axles	Axle 2 X displacement	Axle 2 X displacement	Kin	
+SusX_L1	 	mm	Displacement	Suspensions	Wheel L1 X displacement	Wheel L1 X displacement	Kin	
+SusX_R1	 	mm	Displacement	Suspensions	Wheel R1 X displacement	Wheel R1 X displacement	Kin	
+SusY_A2	 	mm	Displacement	Axles	Axle 2 lateral displacement	Axle 2 lateral displacement	Kin	
+SusY_L1	 	mm	Displacement	Suspensions	Wheel L1 lateral displacement	Wheel L1 lateral displacement	Kin	
+SusY_R1	 	mm	Displacement	Suspensions	Wheel R1 lateral displacement	Wheel R1 lateral displacement	Kin	
+S_Obj_1	 	m	Station	Objects	Station of object 1	Object 1	State	Station is associated with the path identified by the parameter PATH_ID_OBJ. If the parameter OPT_SPEED_OBJ is 1 or 2, then station is also installed as an ODE state variable whose derivative is V_Obj. If PATH_ID_OBJ is zero, then station is not used and is always zero.
+S_RdO_1	 	m	Station	Objects	Station on road path, object 1	Object 1	State	S_Rd_O applies to the reference path for the road surface identified by the parameter ROAD_ID_OBJ. If ROAD_ID_OBJ is zero, then this station is not used and is always zero.
+S_Rd_L1	 	m	Road Station	Tires	Road station for tire L1	Tire L1	Kin	
+S_Rd_L2	 	m	Road Station	Tires	Road station for tire L2	Tire L2	Kin	
+S_Rd_R1	 	m	Road Station	Tires	Road station for tire R1	Tire R1	Kin	
+S_Rd_R2	 	m	Road Station	Tires	Road station for tire R2	Tire R2	Kin	
+TC_Lock	 	-	Control signal	Powertrain	Torque converter lockup signal	Torque converter lockup clutch	Ctl	Torque converter lockup clutch control signal: 0 -> free, 1 -> lockup.
+Throttle	 	-	Dimensionless ratio	Powertrain	Normalized throttle at Pedal	Pedal	Dyn	Sum of the specified open-loop throttle control (internal + imported) plus throttle due to closed-loop speed control.
+Thrtl_SC	 	-	Dimensionless ratio	Powertrain	Throttle (speed controller)	Pedal (speed controller)	Ctl	
+Thr_Eng	 	-	Dimensionless ratio	Powertrain	Normalized throttle at Engine	Engine	Dyn	Normalized throttle applied to the engine. This includes a 1st-order time lag.
+Thr_Intl	 	-	Dimensionless ratio	Powertrain	Normalized throttle (internal)	Pedal (internal)	Ctl	Sum of the specified open-loop throttle control plus throttle due to closed-loop speed control. This excludes the optional imported value.
+TypeO_1	 	-	Type (code)	Objects	Type of object 1	Object 1	State	Each object has an output type (code) that can be set with VS Commands or imported from an external software tool. This can be used to provide content from objects representing signs and traffic signals.
+T_Event	 	s	Time	Time	Time since event clock reset	Event	State	This output is calculated each time step with the formula T_EVENT = T - TSTART_T_EVENT, where TSTART_T_EVENT is a system parameter that may be set to T when a VS Event is triggered.
+T_Real_Elapsed	TReallpd	s	Time	Time	Real time since start of run	Real time since run start	State	This is a real time measurement of the time elapsed since the start of the run.
+T_Real_Last	TRealLst	s	Time	Time	Real time since last step	Real time since last step start	State	This is a real time delta from the start of the last time step to the prior. This will include time taken by the caller.
+T_Real_Step	TRealStp	s	Time	Time	Real time of last step	Real time for last step	State	This is a real time measurement of the last calculation step. This excludes any time taken by the caller.
+T_Record	 	s	Time	Time	Recording time in output file	Recording time in file	State	This variable is incremented when outputs are written to file or saved to a buffer. This matches the time that is obtained in post-processing by multiplying the sample number by the sample interval.
+T_Rtr_L1	 	C	Temperature	Brakes	Brake rotor L1 temperature	Brake rotor L1	State	
+T_Rtr_L2	 	C	Temperature	Brakes	Brake rotor L2 temperature	Brake rotor L2	State	
+T_Rtr_R1	 	C	Temperature	Brakes	Brake rotor R1 temperature	Brake rotor R1	State	
+T_Rtr_R2	 	C	Temperature	Brakes	Brake rotor R2 temperature	Brake rotor R2	State	
+T_Stamp	 	s	Time	Time	Simulation time stamp	Simulation time stamp	State	This is the simulation time. If writing to file is interupted by setting the system parameter OPT_WRITE to 0, then this variable will not match the recording time T_record.
+UTM_East	 	m	UTM Easting	Chassis motion	UTM Easting Coordinate, veh 1	Vehicle	State	
+UTM_North	UTMNorth	m	UTM Northing	Chassis motion	UTM Northing Coordinate, veh 1	Vehicle	State	
+UTM_Zone	 	-	UTM Zone	Chassis motion	UTM Zone (Pos: N Hemi, Neg: S Hemi, veh 1)	Vehicle	State	
+Vair	 	km/h	Speed	Aerodynamics	Air speed relative to vehicle	Air speed relative to vehicle	Kin	
+Vbk_Tot	 	mm3	Volume	Brakes	Total brake corner volume	Brake system	Dyn	
+VisO_1	 	-	Visibility	Objects	Visibility of object 1	Object 1	State	
+VJStL1	 	mm/s	Compression rate	Suspensions	Comp. rate, jounce stop L1	Jounce stop L1	Dyn	
+VJStL2	 	mm/s	Compression rate	Suspensions	Comp. rate, jounce stop L2	Jounce stop L2	Dyn	
+VJStR1	 	mm/s	Compression rate	Suspensions	Comp. rate, jounce stop R1	Jounce stop R1	Dyn	
+VJStR2	 	mm/s	Compression rate	Suspensions	Comp. rate, jounce stop R2	Jounce stop R2	Dyn	
+VRStL1	 	mm/s	Compression rate	Suspensions	Comp. rate, rebound stop L1	Rebound stop L1	Dyn	
+VRStL2	 	mm/s	Compression rate	Suspensions	Comp. rate, rebound stop L2	Rebound stop L2	Dyn	
+VRStR1	 	mm/s	Compression rate	Suspensions	Comp. rate, rebound stop R1	Rebound stop R1	Dyn	
+VRStR2	 	mm/s	Compression rate	Suspensions	Comp. rate, rebound stop R2	Rebound stop R2	Dyn	
+Vwind	 	km/h	Speed	Aerodynamics	Wind speed, unit 1	Wind speed, unit 1	State	
+Vx	 	km/h	Longitudinal speed	Chassis motion	Long. speed, inst. CG, vehicle	Instant CG, vehicle	Kin	This is the speed of the instant CG of the vehicle unit in the ISO/SAE [x] direction. Be aware  that the motion of the instant CG cannot be measured directly in physical vehicles.
+VxCenL1	 	km/h	Longitudinal speed	Tires	Vx, center of tire contact L1	Center of tire contact L1	Kin	
+VxCenL2	 	km/h	Longitudinal speed	Tires	Vx, center of tire contact L2	Center of tire contact L2	Kin	
+VxCenR1	 	km/h	Longitudinal speed	Tires	Vx, center of tire contact R1	Center of tire contact R1	Kin	
+VxCenR2	 	km/h	Longitudinal speed	Tires	Vx, center of tire contact R2	Center of tire contact R2	Kin	
+VxNf_SM	 	km/h	Speed	Chassis motion	Global X vel., CG, sprung mass	CG, sprung mass	Kin	This is the [nx] component of the velocity vector of the sprung mass CG.
+VxTarget	 	km/h	Longitudinal speed	Speed controller	Target speed	Target speed	Ctl	
+Vxz_Fwd	 	km/h	Longitudinal speed	Chassis motion	Longitudinal speed in XZ plane	Vehicle forward in XZ plane	State	This is the forward speed of the sprung mass CG, calculated as SQRT(Vx_SM^2 + Vz_SM^2), with the sign set to match Vx_SM.
+Vx_Err	 	km/h	Longitudinal speed	Speed controller	Speed controller error	Controller error	Ctl	
+Vx_IErr	 	m	Speed error integral	Speed controller	Integrated SC error	Integrated speed error	State	
+Vx_L1	 	km/h	Longitudinal speed	Wheels	Vx (equivalent), wheel L1	Wheel L1 (equivalent)	Kin	Equivalent wheel speed is defined as the spin (rad/sec) multiplied by the effective rolling radius. It is the translational speed that corresponds to the angular rate during free rolling.
+Vx_L2	 	km/h	Longitudinal speed	Wheels	Vx (equivalent), wheel L2	Wheel L2 (equivalent)	Kin	
+Vx_R1	 	km/h	Longitudinal speed	Wheels	Vx (equivalent), wheel R1	Wheel R1 (equivalent)	Kin	
+Vx_R2	 	km/h	Longitudinal speed	Wheels	Vx (equivalent), wheel R2	Wheel R2 (equivalent)	Kin	
+Vx_Rd	 	km/h	Longitudinal speed	Chassis motion	Road X vel., inst. CG, vehicle	Instant CG, vehicle	Kin	This is the speed of the instant CG of the vehicle unit in the road [rx] direction.
+Vx_SM	 	km/h	Longitudinal speed	Chassis motion	Long. speed, CG, sprung mass	CG, sprung mass	Kin	This is the [x] component of the velocity vector of the sprung mass CG.
+Vx_WC_L1	 	km/h	Longitudinal speed	Wheels	Vx at wheel center L1	Vx at wheel center L1	Kin	
+Vx_WC_L2	 	km/h	Longitudinal speed	Wheels	Vx at wheel center L2	Vx at wheel center L2	Kin	
+Vx_WC_R1	 	km/h	Longitudinal speed	Wheels	Vx at wheel center R1	Vx at wheel center R1	Kin	
+Vx_WC_R2	 	km/h	Longitudinal speed	Wheels	Vx at wheel center R2	Vx at wheel center R2	Kin	
+Vy	 	km/h	Lateral speed	Chassis motion	Lat. speed, inst. CG, vehicle	Instant CG, vehicle	Kin	This is the speed of the instant CG of the vehicle unit in the ISO/SAE [y] direction. Be aware  that the motion of the instant CG cannot be measured directly in physical vehicles.
+VyNf_SM	 	km/h	Speed	Chassis motion	Global Y vel., CG, sprung mass	CG, sprung mass	Kin	This is the [ny] component of the velocity vector of the sprung mass CG.
+VyTC_L1	 	km/h	Lateral speed	Tires	Vy, L1 center of tire contact	Center of tire contact L1	Kin	
+VyTC_L2	 	km/h	Lateral speed	Tires	Vy, L2 center of tire contact	Center of tire contact L2	Kin	
+VyTC_R1	 	km/h	Lateral speed	Tires	Vy, R1 center of tire contact	Center of tire contact R1	Kin	
+VyTC_R2	 	km/h	Lateral speed	Tires	Vy, R2 center of tire contact	Center of tire contact R2	Kin	
+Vy_Rack1	 	mm/s	Speed	Steering	Steering rack disp. rate, axle 1	Axle 1 steering	Kin	
+Vy_Rack2	 	mm/s	Speed	Steering	Steering rack disp. rate, axle 2	Axle 2 steering	Kin	
+Vy_Rd	 	km/h	Lateral speed	Chassis motion	Road Y vel., inst. CG, vehicle	Instant CG, vehicle	Kin	This is the speed of the instant CG of the vehicle unit in the road [ry] direction.
+Vy_SM	 	km/h	Lateral speed	Chassis motion	Lateral speed, CG, sprung mass	CG, sprung mass	Kin	This is the [y] component of the velocity vector of the sprung mass CG.
+Vy_WC_L1	 	km/h	Lateral speed	Wheels	Vy at wheel center L1	Vy at wheel center L1	Kin	
+Vy_WC_L2	 	km/h	Lateral speed	Wheels	Vy at wheel center L2	Vy at wheel center L2	Kin	
+Vy_WC_R1	 	km/h	Lateral speed	Wheels	Vy at wheel center R1	Vy at wheel center R1	Kin	
+Vy_WC_R2	 	km/h	Lateral speed	Wheels	Vy at wheel center R2	Vy at wheel center R2	Kin	
+Vz	 	km/h	Vertical speed	Chassis motion	Vert. speed, inst. CG, vehicle	Instant CG, vehicle	Kin	This is the speed of the instant CG of the vehicle unit in the [nz] direction. Be aware  that the motion of the instant CG cannot be measured directly in physical vehicles.
+Vz_Rd	 	km/h	Vertical speed	Chassis motion	Road Z vel., inst. CG, vehicle	Instant CG, vehicle	Kin	This is the speed of the instant CG of the vehicle unit in the road [rz] direction.
+Vz_SM	 	km/h	Vertical speed	Chassis motion	Vert. speed, CG, sprung mass	CG, sprung mass	Kin	This is the [nz] component of the velocity vector of the sprung mass CG.
+Vz_WC_L1	 	km/h	Vertical speed	Wheels	Vz at wheel center L1	Vz at wheel center L1	Kin	
+Vz_WC_L2	 	km/h	Vertical speed	Wheels	Vz at wheel center L2	Vz at wheel center L2	Kin	
+Vz_WC_R1	 	km/h	Vertical speed	Wheels	Vz at wheel center R1	Vz at wheel center R1	Kin	
+Vz_WC_R2	 	km/h	Vertical speed	Wheels	Vz at wheel center R2	Vz at wheel center R2	Kin	
+V_Obj_1	 	km/h	Forward speed	Objects	Speed of object 1	Object 1	State	If the parameter PATH_ID_OBJ is nonzero it identifies a path for the object. If the parameter OPT_SPEED_OBJ is 1 or 2, then station is also installed as an ODE state variable whose derivative is V_Obj. In this case, V_Obj for each object can be imported or set with VS Commands such as EQ_OUT. Otherwise, V_Obj is calculated from changes in global X and Y coordinates.
+Xcg_SM	 	m	Global X coordinate	Chassis motion	X coordinate, CG, sprung mass	CG, sprung mass	Dyn	
+Xcg_TM	 	m	Global X coordinate	Chassis motion	X coordinate, inst. CG, vehicle	Instant CG, vehicle	Kin	
+Xctc_L1	 	m	Global X coordinate	Tires	X coordinate, tire CTC L1	Center of tire contact L1	Kin	
+Xctc_L2	 	m	Global X coordinate	Tires	X coordinate, tire CTC L2	Center of tire contact L2	Kin	
+Xctc_R1	 	m	Global X coordinate	Tires	X coordinate, tire CTC R1	Center of tire contact R1	Kin	
+Xctc_R2	 	m	Global X coordinate	Tires	X coordinate, tire CTC R2	Center of tire contact R2	Kin	
+Xo	 	m	Global X coordinate	Chassis motion	X coordinate, vehicle origin	Vehicle	State	
+Xrd_Air	 	m	Global X coordinate	Aerodynamics	X coord. of road aero ref. 1	Road reference frame 1	Kin	
+Xrel_A2	 	mm	Local X coordinate	Axles	X relative coordinate, axle 2	AxleXyz center 2	Dyn	
+Xrel_L1	 	mm	Local X coordinate	Wheels	X relative coordinate, WC L1	Wheel center L1	Dyn	
+Xrel_L2	 	mm	Local X coordinate	Wheels	X relative coordinate, WC L2	Wheel center L2	Dyn	
+Xrel_R1	 	mm	Local X coordinate	Wheels	X relative coordinate, WC R1	Wheel center R1	Dyn	
+Xrel_R2	 	mm	Local X coordinate	Wheels	X relative coordinate, WC R2	Wheel center R2	Dyn	
+Xv1_O_1	 	m	Xv1_ coordinate	Objects	Xv1_ coordinate, object 1	Object 1	State	Each object has 4 vertices whose global X and Y coordinates are available as outputs Xv and Yv. For rectangular objects, v1 is left-front, v2 is right-front, v3 is left-rear, and v4 is right-rear. For cylinders, v1 is front, v2 is right, v3 is back, and v4 is left.
+Xv2_O_1	 	m	Xv2_ coordinate	Objects	Xv2_ coordinate, object 1	Object 1	State	
+Xv3_O_1	 	m	Xv3_ coordinate	Objects	Xv3_ coordinate, object 1	Object 1	State	
+Xv4_O_1	 	m	Xv4_ coordinate	Objects	Xv4_ coordinate, object 1	Object 1	State	
+X_A2	 	m	Global X coordinate	Axles	X coordinate, axle 2	Axle 2	Kin	
+X_L1	 	m	Global X coordinate	Wheels	X coordinate, wheel center L1	Wheel center L1	Kin	
+X_L2	 	m	Global X coordinate	Wheels	X coordinate, wheel center L2	Wheel center L2	Kin	
+X_Obj_1	 	m	X coordinate	Objects	X coordinate of object 1	Object 1	State	Station and lateral offset (S and L) are used to calculate global X and Y coordinates if the parameter PATH_ID_OBJ is nonzero. If PATH_ID_OBJ is zero, then X and Y can be imported or calculated with VS Commands such as EQ_IN.
+X_R1	 	m	Global X coordinate	Wheels	X coordinate, wheel center R1	Wheel center R1	Kin	
+X_R2	 	m	Global X coordinate	Wheels	X coordinate, wheel center R2	Wheel center R2	Kin	
+Yaw	 	deg	Angle	Chassis motion	Yaw, vehicle	Vehicle yaw	State	Yaw angle state variable, defined as the integral of the yaw rate.
+YawO_1	 	deg	Yaw angle	Objects	Yaw angle of object 1	Object 1	State	
+YawWK_L1	 	deg	Angle	Wheels	Yaw, wheel knuckle L1	Yaw, wheel knuckle L1	Kin	This is an Euler yaw angle for the wheel knuckle, used for VS STI tire models.
+YawWK_L2	 	deg	Angle	Wheels	Yaw, wheel knuckle L2	Yaw, wheel knuckle L2	Kin	
+YawWK_R1	 	deg	Angle	Wheels	Yaw, wheel knuckle R1	Yaw, wheel knuckle R1	Kin	
+YawWK_R2	 	deg	Angle	Wheels	Yaw, wheel knuckle R2	Yaw, wheel knuckle R2	Kin	
+Yaw_L1	 	deg	Angle	Wheels	Yaw, wheel L1	Yaw, wheel L1	Kin	This is the yaw angle of the wheel spin axis, used to view with VS Visualizer.
+Yaw_L2	 	deg	Angle	Wheels	Yaw, wheel L2	Yaw, wheel L2	Kin	
+Yaw_R1	 	deg	Angle	Wheels	Yaw, wheel R1	Yaw, wheel R1	Kin	
+Yaw_R2	 	deg	Angle	Wheels	Yaw, wheel R2	Yaw, wheel R2	Kin	
+Yaw_Wind	 	deg	Angle	Aerodynamics	Wind heading (yaw), unit 1	Wind heading, unit 1	State	
+Ycg_SM	 	m	Global Y coordinate	Chassis motion	Y coordinate, CG, sprung mass	CG, sprung mass	Dyn	
+Ycg_TM	 	m	Global Y coordinate	Chassis motion	Y coordinate, inst. CG, vehicle	Instant CG, vehicle	Kin	
+Yctc_L1	 	m	Global Y coordinate	Tires	Y coordinate, tire CTC L1	Center of tire contact L1	Kin	
+Yctc_L2	 	m	Global Y coordinate	Tires	Y coordinate, tire CTC L2	Center of tire contact L2	Kin	
+Yctc_R1	 	m	Global Y coordinate	Tires	Y coordinate, tire CTC R1	Center of tire contact R1	Kin	
+Yctc_R2	 	m	Global Y coordinate	Tires	Y coordinate, tire CTC R2	Center of tire contact R2	Kin	
+YlcgTM	 	mm	Local Y coordinate	Chassis motion	Local Y, inst. CG, vehicle	Instant CG, vehicle	Kin	This is the local Y coordinate of the instant CG of the vehicle unit in the sprung mass coordinate system. Be aware that the motion of the instant CG cannot be measured directly in physical vehicles.
+Yo	 	m	Global Y coordinate	Chassis motion	Y coordinate, vehicle origin	Vehicle	State	
+Yrd_Air	 	m	Global Y coordinate	Aerodynamics	Y coord. of road aero ref. 1	Road reference frame 1	Kin	
+Yrel_A2	 	mm	Local Y coordinate	Axles	Y relative coordinate, axle 2	AxleXyz center 2	Dyn	
+Yrel_L1	 	mm	Local Y coordinate	Wheels	Y relative coordinate, WC L1	Wheel center L1	Dyn	
+Yrel_L2	 	mm	Local Y coordinate	Wheels	Y relative coordinate, WC L2	Wheel center L2	Dyn	
+Yrel_R1	 	mm	Local Y coordinate	Wheels	Y relative coordinate, WC R1	Wheel center R1	Dyn	
+Yrel_R2	 	mm	Local Y coordinate	Wheels	Y relative coordinate, WC R2	Wheel center R2	Dyn	
+Yv1_O_1	 	m	Yv1_ coordinate	Objects	Yv1_ coordinate, object 1	Object 1	State	Each object has 4 vertices whose global X and Y coordinates are available as outputs Xv and Yv. For rectangular objects, v1 is left-front, v2 is right-front, v3 is left-rear, and v4 is right-rear. For cylinders, v1 is front, v2 is right, v3 is back, and v4 is left.
+Yv2_O_1	 	m	Yv2_ coordinate	Objects	Yv2_ coordinate, object 1	Object 1	State	
+Yv3_O_1	 	m	Yv3_ coordinate	Objects	Yv3_ coordinate, object 1	Object 1	State	
+Yv4_O_1	 	m	Yv4_ coordinate	Objects	Yv4_ coordinate, object 1	Object 1	State	
+Y_A2	 	m	Global Y coordinate	Axles	Y coordinate, axle 2	Axle 2	Kin	
+Y_L1	 	m	Global Y coordinate	Wheels	Y coordinate, wheel center L1	Wheel center L1	Kin	
+Y_L2	 	m	Global Y coordinate	Wheels	Y coordinate, wheel center L2	Wheel center L2	Kin	
+Y_Obj_1	 	m	Y coordinate	Objects	Y coordinate of object 1	Object 1	State	Station and lateral offset (S and L) are used to calculate global X and Y coordinates if the parameter PATH_ID_OBJ is nonzero. If PATH_ID_OBJ is zero, then X and Y can be imported or calculated with VS Commands such as EQ_IN.
+Y_R1	 	m	Global Y coordinate	Wheels	Y coordinate, wheel center R1	Wheel center R1	Kin	
+Y_R2	 	m	Global Y coordinate	Wheels	Y coordinate, wheel center R2	Wheel center R2	Kin	
+Y_Rack1	 	mm	Displacement	Steering	Steering rack disp., axle 1	Axle 1 steering	Kin	
+Y_Rack2	 	mm	Displacement	Steering	Steering rack disp., axle 2	Axle 2 steering	Kin	
+Zcg_SM	 	m	Global Z coordinate	Chassis motion	Z coordinate, CG, sprung mass	CG, sprung mass	Dyn	
+Zcg_TM	 	m	Global Z coordinate	Chassis motion	Z coordinate, inst. CG, vehicle	Instant CG, vehicle	Kin	
+ZgndAve1	 	m	Ground elevation	Aerodynamics	Average ground height, axle 1	Ground at axle 1	Kin	
+ZgndAve2	 	m	Ground elevation	Aerodynamics	Average ground height, axle 2	Ground at axle 2	Kin	
+Zgnd_L1	 	m	Global Z coordinate	Ground and road	Ground Z coord under tire L1	Ground under tire L1	Kin	
+Zgnd_L2	 	m	Global Z coordinate	Ground and road	Ground Z coord under tire L2	Ground under tire L2	Kin	
+Zgnd_R1	 	m	Global Z coordinate	Ground and road	Ground Z coord under tire R1	Ground under tire R1	Kin	
+Zgnd_R2	 	m	Global Z coordinate	Ground and road	Ground Z coord under tire R2	Ground under tire R2	Kin	
+Zo	 	m	Global Z coordinate	Chassis motion	Z coordinate, vehicle origin	Vehicle	State	
+Zrd_Air	 	m	Global Z coordinate	Aerodynamics	Z coord. of road aero ref. 1	Road reference frame 1	Kin	
+Zrel_A2	 	mm	Local Z coordinate	Axles	Z relative coordinate, axle 2	AxleXyz center 2	Dyn	
+Zrel_L1	 	mm	Local Z coordinate	Wheels	Z relative coordinate, WC L1	Wheel center L1	Kin	
+Zrel_L2	 	mm	Local Z coordinate	Wheels	Z relative coordinate, WC L2	Wheel center L2	Kin	
+Zrel_R1	 	mm	Local Z coordinate	Wheels	Z relative coordinate, WC R1	Wheel center R1	Kin	
+Zrel_R2	 	mm	Local Z coordinate	Wheels	Z relative coordinate, WC R2	Wheel center R2	Kin	
+Z_A2	 	m	Global Z coordinate	Axles	Z coordinate, axle 2	Axle 2	Kin	
+Z_Aero	 	m	Height above road	Aerodynamics	Aero ref pt ht above gnd	Aero reference point	Kin	
+Z_L1	 	m	Global Z coordinate	Wheels	Z coordinate, wheel center L1	Wheel center L1	Kin	
+Z_L2	 	m	Global Z coordinate	Wheels	Z coordinate, wheel center L2	Wheel center L2	Kin	
+Z_Obj_1	 	m	Z coordinate	Objects	Z coordinate of object 1	Object 1	State	The global Z coordinate of the object control point is calculated from the road surface specified with the parameter ROAD_ID_OBJ. If ROAD_ID_OBJ is set to zero, then Z_Obj can be imported or calculated with VS Commands such as EQ_IN.
+Z_R1	 	m	Global Z coordinate	Wheels	Z coordinate, wheel center R1	Wheel center R1	Kin	
+Z_R2	 	m	Global Z coordinate	Wheels	Z coordinate, wheel center R2	Wheel center R2	Kin	
