@@ -1,4 +1,4 @@
-# AFS vs. Torque Vectoring
+# Adaptive Lane Keeping with Comparative Yaw Stability Control: Active Front Steering versus Torque Vectoring
 
 ME 780 vehicle-system-dynamics project comparing a baseline controller,
 active front steering (AFS), and torque vectoring (TV) using a common
